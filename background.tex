@@ -1,0 +1,56 @@
+\chapter{State-of-the-Art} \label{chap:sota}
+
+\section*{}
+
+\section{Introduction}
+In order to find the best approach to this problem, some research on already existing methodologies and concepts was needed. First an overview for the general categories researched is given, followed by the actual state of the art found, divided by relevant subcategories. 
+
+\section{Reverse Engineering}\label{sec:reverseengineering}
+
+Reverse engineering is “the process of analysing the subject system to identify the system components and interrelationships and to create representations of the system in another form or at a higher level of abstraction” \cite{chikofsky1990reverse}.
+
+There are two methods of applying reverse engineering to a system: the dynamic method, in which the data are retrieved from the system at run time without access to the source code, and the static method, which obtains the data from the system source code \cite{systa1999dynamic}. There is also the hybrid method, which combines the two previous methods, and the historical method, which includes historic information to see the evolution of the software system \cite{canfora2011achievements}. These approaches follow the same main steps: collect the data, and analyse it and represent it in a legible way, and in the process allow the discovery of information about the system's control and data flow \cite{pacione2003comparative}.
+
+\subsection{Extraction of Information from Execution Traces} \label{sec:extractexecutiontraces}
+
+Plenty of approaches that extract information from execution traces have been found. TraceServer \cite{andjelkovic2011trace} is an extension of the Java PathFinder model checking tool \cite{jpf} which collects and analyzes execution traces. jRapture \cite{steven2000jrapture} is a technique and a tool for capture and replay of Java program executions. ReGUI \cite{coimbra2011reverse,coimbra2012dynamic} is a dynamic reverse engineering tool made to reduce the effort of modelling the structure and behaviour of a software application GUI. Duarte, Kramer and Uchitel defined an approach for behaviour model extraction which combines static and dynamic information \cite{duarte2006model}. Fischer \textit{et al.} developed a methodology a that analyzes and compares execution traces of different versions of a software system to provide insights into its evolution, named EvoTrace \cite{fischer2005system}. Amalfitano's approach \cite{amalfitano2010rich} generates test cases from execution traces to help testing from Rich Internet Applications (RIAs), with the execution traces being obtained from user sessions and crawling the application. 
+
+% TODO - ADD MORE
+
+\subsection{Extraction of Information from Web Applications}
+The following approaches extract information from Web applications for analysis and processing. 
+
+\subsection{Dynamic Approaches}
+Ricca and Tonella's ReWeb \cite{ricca2001understanding} dynamically extracts information from a Web application's server logs to analyze its structure and evolution, and so aims to find inconsistencies and connectivity problems. Mesbah \textit{et al.} proposed \cite{mesbah2012invariant} an automated technique for generating test cases with invariants from models inferred through dynamic crawling. Another approach by Mesbah \textit{et al.}, named FeedEx \cite{fard2013feedback} uses a greedy algorithm to partially crawl a RIA's GUI, in order to derive test models. Benedikt \textit{et al.} introduced a framework called Veriweb \cite{benedikt02veriweb} that discovers and explores automatically Web-site execution paths that can be followed by a user in a Web application. 
+Webmate \cite{dallmeier2012webmate}.
+%\subsection{Static Approaches}
+\subsection{Hybrid Approaches}
+Di Lucca \textit{et al.}'s approach \cite{di2005integrating} integrates WARE \cite{di2004reverse}, a static analysis tool that generates UML diagrams from a Web application's source code, and WANDA \cite{antoniol2004understanding}, a Web application dynamic analysis tool, to identify groups of equivalent built client pages and to enable a better understanding of the aplication under study. 
+Crawljax \cite{roest2010automated} is a tool that obtains graphical sitemaps by automatically crawling through a Web application. 
+Selenium \cite{selenium} is an open-source capture/replay tool that captures an user's interaction with a Web application in HTML files.
+
+
+
+
+
+\section{Data Mining}\label{sec:datamining}
+
+\begin{description}
+\item[Data Analysis Algorithms]  are
+%Information Extraction from HTML: Application of a General Machine Learning Approach
+
+\item[Data Analysis Tools]  are
+\end{description}
+
+%\section{Execution Trace Extraction Tools} \label{sec:exectracetools}
+%AVID, Jinsight, jRMTool, Together ControlCenter
+
+\section{Patterns}\label{sec:patterns}
+User Interaction (UI) patterns are well-documented in a various number of sources \cite{tidwell2010designing,van2001patterns, neil12standard,sinnig2005patterns}. The patterns already supported (like the Search and Master/Detail patterns) enter the list of most popular patterns, according to the sources found, and if the selection of supported patterns were to be broadened, the pick of the next one(s) would be heavily influenced by the literature.
+
+
+%\section{Pattern Mining} \label{sec:patternmining}
+
+
+
+\section{Chapter Conclusions}

@@ -1,0 +1,126 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{VWVDVE01}
+
+\bibitem[AA11]{andjelkovic2011trace}
+Igor Andjelkovic and Cyrille Artho.
+\newblock Trace server: A tool for storing, querying and analyzing execution
+  traces.
+\newblock In {\em JPF Workshop, Lawrence, USA}, 2011.
+
+\bibitem[ADPZ04]{antoniol2004understanding}
+Giuliano Antoniol, Massimiliano Di~Penta, and Michele Zazzara.
+\newblock Understanding web applications through dynamic analysis.
+\newblock In {\em Program Comprehension, 2004. Proceedings. 12th IEEE
+  International Workshop on}, pages 120--129. IEEE, 2004.
+
+\bibitem[AFT10]{amalfitano2010rich}
+Domenico Amalfitano, Anna~Rita Fasolino, and Porfirio Tramontana.
+\newblock Rich internet application testing using execution trace data.
+\newblock In {\em Software Testing, Verification, and Validation Workshops
+  (ICSTW), 2010 Third International Conference on}, pages 274--283. IEEE, 2010.
+
+\bibitem[CC{\etalchar{+}}90]{chikofsky1990reverse}
+Elliot~J Chikofsky, James~H Cross, et~al.
+\newblock Reverse engineering and design recovery: A taxonomy.
+\newblock {\em Software, IEEE}, 7(1):13--17, 1990.
+
+\bibitem[CDPC11]{canfora2011achievements}
+Gerardo Canfora, Massimiliano Di~Penta, and Luigi Cerulo.
+\newblock Achievements and challenges in software reverse engineering.
+\newblock {\em Communications of the ACM}, 54(4):142--151, 2011.
+
+\bibitem[CMPPF11]{coimbra2011reverse}
+In{\^e}s Coimbra~Morgado, Ana Paiva, and Jo{\~a}o Pascoal~Faria.
+\newblock Reverse engineering of graphical user interfaces.
+\newblock In {\em ICSEA 2011, The Sixth International Conference on Software
+  Engineering Advances}, pages 293--298, 2011.
+
+\bibitem[CMPPF12]{coimbra2012dynamic}
+In{\^e}s Coimbra~Morgado, Ana~CR Paiva, and Jo{\~a}o Pascoal~Faria.
+\newblock Dynamic reverse engineering of graphical user interfaces.
+\newblock {\em International Journal On Advances in Software}, 5(3 and
+  4):224--236, 2012.
+
+\bibitem[DKU06]{duarte2006model}
+Lucio~Mauro Duarte, Jeff Kramer, and Sebastian Uchitel.
+\newblock Model extraction using context information.
+\newblock In {\em Model Driven Engineering Languages and Systems}, pages
+  380--394. Springer, 2006.
+
+\bibitem[DLDP05]{di2005integrating}
+Giuseppe~A Di~Lucca and Massimiliano Di~Penta.
+\newblock Integrating static and dynamic analysis to improve the comprehension
+  of existing web applications.
+\newblock In {\em Web Site Evolution, 2005.(WSE 2005). Seventh IEEE
+  International Symposium on}, pages 87--94. IEEE, 2005.
+
+\bibitem[DLFT04]{di2004reverse}
+Giuseppe~Antonio Di~Lucca, Anna~Rita Fasolino, and Porfirio Tramontana.
+\newblock Reverse engineering web applications: the ware approach.
+\newblock {\em Journal of Software Maintenance and Evolution: Research and
+  Practice}, 16(1-2):71--101, 2004.
+
+\bibitem[FOGG05]{fischer2005system}
+Michael Fischer, Johann Oberleitner, Harald Gall, and Thomas Gschwind.
+\newblock System evolution tracking through execution trace analysis.
+\newblock In {\em Program Comprehension, 2005. IWPC 2005. Proceedings. 13th
+  International Workshop on}, pages 237--246. IEEE, 2005.
+
+\bibitem[jpf]{jpf}
+Java path finder.
+\newblock Accessed: 2014-01-21.
+
+\bibitem[Nei]{neil12standard}
+T.~Neil.
+\newblock 12 standard screen patterns.
+\newblock Accessed: 2014-01-22.
+
+\bibitem[PRW03]{pacione2003comparative}
+Michael~J Pacione, Marc Roper, and Murray Wood.
+\newblock A comparative evaluation of dynamic visualisation tools.
+\newblock In {\em 10th Working Conference on Reverse Engineering}, pages
+  80--89, 2003.
+
+\bibitem[Roe10]{roest2010automated}
+Danny Roest.
+\newblock Automated regression testing of ajax web applications.
+\newblock Master's thesis, Delft University of Technology, February 2010.
+
+\bibitem[RT01]{ricca2001understanding}
+Filippo Ricca and Paolo Tonella.
+\newblock Understanding and restructuring web sites with reweb.
+\newblock {\em Multimedia, IEEE}, 8(2):40--51, 2001.
+
+\bibitem[SCFP00]{steven2000jrapture}
+John Steven, Pravir Chandra, Bob Fleck, and Andy Podgurski.
+\newblock {\em jRapture: A capture/replay tool for observation-based testing},
+  volume~25.
+\newblock ACM, 2000.
+
+\bibitem[sel]{selenium}
+Selenium documentation.
+\newblock Accessed: 2014-01-22.
+
+\bibitem[SGR{\etalchar{+}}05]{sinnig2005patterns}
+Daniel Sinnig, Ashraf Gaffar, Daniel Reichart, Peter Forbrig, and Ahmed Seffah.
+\newblock Patterns in model-based engineering.
+\newblock In {\em Computer-Aided Design of User Interfaces IV}, pages 197--210.
+  Springer, 2005.
+
+\bibitem[Sys99]{systa1999dynamic}
+Tarja Syst{\"a}.
+\newblock Dynamic reverse engineering of java software.
+\newblock In {\em ECOOP Workshops}, pages 174--175, 1999.
+
+\bibitem[Tid10]{tidwell2010designing}
+Jenifer Tidwell.
+\newblock {\em Designing interfaces}.
+\newblock O'Reilly, 2010.
+
+\bibitem[VWVDVE01]{van2001patterns}
+Martijn Van~Welie, Gerrit~C Van Der~Veer, and Anton Eli{\"e}ns.
+\newblock Patterns as tools for user interface design.
+\newblock In {\em Tools for Working with Guidelines}, pages 313--324. Springer,
+  2001.
+
+\end{thebibliography}
