@@ -19,6 +19,12 @@ Domenico Amalfitano, Anna~Rita Fasolino, and Porfirio Tramontana.
 \newblock In {\em Software Testing, Verification, and Validation Workshops
   (ICSTW), 2010 Third International Conference on}, pages 274--283. IEEE, 2010.
 
+\bibitem[BFG02]{benedikt02veriweb}
+Michael Benedikt, Juliana Freire, and Patrice Godefroid.
+\newblock Veriweb: Automatically testing dynamic web sites.
+\newblock In {\em In Proceedings of 11th International World Wide Web
+  Conference (WW W’2002}, 2002.
+
 \bibitem[CC{\etalchar{+}}90]{chikofsky1990reverse}
 Elliot~J Chikofsky, James~H Cross, et~al.
 \newblock Reverse engineering and design recovery: A taxonomy.
@@ -41,6 +47,12 @@ In{\^e}s Coimbra~Morgado, Ana~CR Paiva, and Jo{\~a}o Pascoal~Faria.
 \newblock {\em International Journal On Advances in Software}, 5(3 and
   4):224--236, 2012.
 
+\bibitem[DBOZ12]{dallmeier2012webmate}
+Valentin Dallmeier, Martin Burger, Tobias Orth, and Andreas Zeller.
+\newblock Webmate: a tool for testing web 2.0 applications.
+\newblock In {\em Proceedings of the Workshop on JavaScript Tools}, pages
+  11--15. ACM, 2012.
+
 \bibitem[DKU06]{duarte2006model}
 Lucio~Mauro Duarte, Jeff Kramer, and Sebastian Uchitel.
 \newblock Model extraction using context information.
@@ -60,6 +72,14 @@ Giuseppe~Antonio Di~Lucca, Anna~Rita Fasolino, and Porfirio Tramontana.
 \newblock {\em Journal of Software Maintenance and Evolution: Research and
   Practice}, 16(1-2):71--101, 2004.
 
+\bibitem[FM13]{fard2013feedback}
+A~Milani Fard and Ali Mesbah.
+\newblock Feedback-directed exploration of web applications to derive test
+  models.
+\newblock In {\em Proceedings of the 24th IEEE International Symposium on
+  Software Reliability Engineering (ISSRE). IEEE Computer Society}, page~10,
+  2013.
+
 \bibitem[FOGG05]{fischer2005system}
 Michael Fischer, Johann Oberleitner, Harald Gall, and Thomas Gschwind.
 \newblock System evolution tracking through execution trace analysis.
@@ -69,6 +89,11 @@ Michael Fischer, Johann Oberleitner, Harald Gall, and Thomas Gschwind.
 \bibitem[jpf]{jpf}
 Java path finder.
 \newblock Accessed: 2014-01-21.
+
+\bibitem[MvDR12]{mesbah2012invariant}
+Ali Mesbah, Arie van Deursen, and Danny Roest.
+\newblock Invariant-based automatic testing of modern web applications.
+\newblock {\em Software Engineering, IEEE Transactions on}, 38(1):35--53, 2012.
 
 \bibitem[Nei]{neil12standard}
 T.~Neil.

@@ -20,18 +20,14 @@ Plenty of approaches that extract information from execution traces have been fo
 \subsection{Extraction of Information from Web Applications}
 The following approaches extract information from Web applications for analysis and processing. 
 
-\subsection{Dynamic Approaches}
-Ricca and Tonella's ReWeb \cite{ricca2001understanding} dynamically extracts information from a Web application's server logs to analyze its structure and evolution, and so aims to find inconsistencies and connectivity problems. Mesbah \textit{et al.} proposed \cite{mesbah2012invariant} an automated technique for generating test cases with invariants from models inferred through dynamic crawling. Another approach by Mesbah \textit{et al.}, named FeedEx \cite{fard2013feedback} uses a greedy algorithm to partially crawl a RIA's GUI, in order to derive test models. Benedikt \textit{et al.} introduced a framework called Veriweb \cite{benedikt02veriweb} that discovers and explores automatically Web-site execution paths that can be followed by a user in a Web application. 
-Webmate \cite{dallmeier2012webmate}.
-%\subsection{Static Approaches}
-\subsection{Hybrid Approaches}
-Di Lucca \textit{et al.}'s approach \cite{di2005integrating} integrates WARE \cite{di2004reverse}, a static analysis tool that generates UML diagrams from a Web application's source code, and WANDA \cite{antoniol2004understanding}, a Web application dynamic analysis tool, to identify groups of equivalent built client pages and to enable a better understanding of the aplication under study. 
-Crawljax \cite{roest2010automated} is a tool that obtains graphical sitemaps by automatically crawling through a Web application. 
+Ricca and Tonella's ReWeb \cite{ricca2001understanding} dynamically extracts information from a Web application's server logs to analyze its structure and evolution, and so aims to find inconsistencies and connectivity problems. 
+Mesbah \textit{et al.} proposed \cite{mesbah2012invariant} an automated technique for generating test cases with invariants from models inferred through dynamic crawling. 
+Another approach by Mesbah \textit{et al.}, named FeedEx \cite{fard2013feedback} uses a greedy algorithm to partially crawl a RIA's GUI, in order to derive test models. Benedikt \textit{et al.} introduced a framework called Veriweb \cite{benedikt2002veriweb} that discovers and explores automatically Web-site execution paths that can be followed by a user in a Web application. Dallmeier \textit{et al.}'s Webmate \cite{dallmeier2012webmate,dallmeier2013webmate} is a tool that analyzes the web application under test, identifies all functionally different states, and is then able to navigate to each of these states at the user’s request. Crawljax \cite{roest2010automated} is a tool that obtains graphical sitemaps by automatically crawling through a Web application. WebDiff \cite{choudhary2010webdiff} is a tool that searches for cross-browser inconsistencies by analyzing a website's DOM and comparing screenshots obtained in different browsers. Di Lucca \textit{et al.}'s approach \cite{di2005integrating} integrates WARE \cite{di2004reverse}, a static analysis tool that generates UML diagrams from a Web application's source code, and WANDA \cite{antoniol2004understanding}, a Web application dynamic analysis tool, to identify groups of equivalent built client pages and to enable a better understanding of the aplication under study. 
+
+
+\subsection{Capture-Replay Tools}
+
 Selenium \cite{selenium} is an open-source capture/replay tool that captures an user's interaction with a Web application in HTML files.
-
-
-
-
 
 \section{Data Mining}\label{sec:datamining}
 
