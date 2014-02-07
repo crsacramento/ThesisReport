@@ -16,9 +16,10 @@ There are two methods of applying reverse engineering to a system: the dynamic m
 Plenty of approaches that extract information from execution traces have been found. 
 TraceServer \cite{andjelkovic2011trace} is an extension of the Java PathFinder model checking tool \cite{jpf} which collects and analyzes execution traces. jRapture \cite{steven2000jrapture} is a technique and a tool for capture and replay of Java program executions. ReGUI \cite{coimbra2011reverse,coimbra2012dynamic} is a dynamic reverse engineering tool made to reduce the effort of modelling the structure and behaviour of a software application GUI. Duarte, Kramer and Uchitel defined an approach for behaviour model extraction which combines static and dynamic information \cite{duarte2006model}. Fischer \textit{et al.} developed a methodology that analyzes and compares execution traces of different versions of a software system to provide insights into its evolution, named EvoTrace \cite{fischer2005system}. Amalfitano's approach \cite{amalfitano2010rich} generates test cases from execution traces to help testing from Rich Internet Applications (RIAs), with the execution traces being obtained from user sessions and crawling the application. 
 
-% TODO - ADD MORE
+% TODO - ADD MORE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Extraction of Information from Web Applications}
+
 The following approaches extract information from Web applications for analysis and processing. 
 
 Ricca and Tonella's ReWeb \cite{ricca2001understanding} dynamically extracts information from a Web application's server logs to analyze its structure and evolution, and so aims to find inconsistencies and connectivity problems. Benedikt \textit{et al.} introduced a framework called VeriWeb \cite{benedikt2002veriWeb} that discovers and explores automatically Web-site execution paths that can be followed by a user in a Web application.
@@ -29,15 +30,25 @@ Artzi \textit{et al.} developed a tool called Artemis \cite{artzi2011framework} 
 Amalfitano \textit{et al.} developed a semi-automatic approach \cite{amalfitano2011using} that uses dynamic analysis of a Web application to generate end user documentation, compliant with known standards and guidelines for software user documentation. 
 Another approach by Mesbah \textit{et al.}, named FeedEx \cite{fard2013feedback} is a feedback-directed Web application exploration technique to derive test models. It uses a greedy algorithm to partially crawl a RIA's GUI, and the goal is that the derived test model capture different aspects of the given Web application’s client-side functionality.  Dallmeier \textit{et al.}'s Webmate \cite{dallmeier2012Webmate,dallmeier2013Webmate} is a tool that analyzes the Web application under test, identifies all functionally different states, and is then able to navigate to each of these states at the user’s request. 
 
+% TODO - FINISH ARTICLES TO PROCESS, DONT SEARCH %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Inferring Patterns from Web applications}
+Despite the fact that there are plenty of approaches to mine patterns from Web applications, no approaches have been found that infer UI patterns from Web applications beside the work this thesis means to extend \cite{nabuco2013inferring,morgado2012gui}. The approaches found deal mostly with Web mining, with the goal of finding relationships between different data or finding the same data in different formats. Brin \cite{brin1999extracting} presents an approach to extract relations and patterns for the same data spread through many different formats. Chang \cite{chang2003automatic} proposes a similar method to discover patterns, by extracting structured data from semi-structured Web documents. Freitag \cite{freitag1998information} 
+
+
+%A knowledge learning approach to information extraction from multiple text based Web sites
+% TODO - DEFINITELY ADD MORE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \subsection{Capture-Replay Tools}
+The execution traces of a Web application, on the client side, are usually captured via a capture-replay tool. Here we present the most popular capture-replay tools used nowadays.
 
-Selenium \cite{selenium} is an open-source capture/replay tool that captures an user's interaction with a Web application in HTML files. It has multi browser, OS and language support, can be installed server-side and as a Mozilla Firefox add-on, has its own IDE \textit{(Integrated Development Environment)}, and allows recording and playback of tests.
+Selenium \footnote{Selenium: http://docs.seleniumhq.org/} is an open-source capture/replay tool that captures an user's interaction with a Web application in HTML files. It has multi browser, OS and language support, can be installed server-side and as a Mozilla Firefox add-on, has its own IDE \textit{(Integrated Development Environment)}, and allows recording and playback of tests.
 
-Watir Webdriver \cite{watir} is is an open-source (BSD) family of Ruby libraries for automating Web browsers and Web application testing. It has multi browser and OS support, a rich API, and has a functionality for non-tech users: the ‘Simple’ class. There also exist ports for other programming languages, such as Watij (for Java) and Watin (.NET).
+Watir Webdriver \footnote{Watir: http://watirwebdriver.com/} is is an open-source (BSD) family of Ruby libraries for automating Web browsers and Web application testing. It has multi browser and OS support, a rich API, and has a functionality for non-tech users: the ‘Simple’ class. There also exist ports for other programming languages, such as Watij (for Java) and Watin (.NET).
 
-IBM Rational Functional Tester (RFT) \cite{rft} is an automated functional testing and regression testing tool. This software provides automated testing capabilities for functional, regression, GUI, and data-driven testing. Rational Function Tester supports a range of applications, such as .Net, Java, Siebel, SAP, terminal emulator-based applications, PowerBuilder, Ajax, Adobe Flex, and others. It permits storyboard testing, automated testing, data-driven testing, and test scripting.
+IBM Rational Functional Tester (RFT) \footnote{IBM RFT: http://www-03.ibm.com/software/products/en/functional} is an automated functional testing and regression testing tool. This software provides automated testing capabilities for functional, regression, GUI, and data-driven testing. Rational Function Tester supports a range of applications, such as .Net, Java, Siebel, SAP, terminal emulator-based applications, PowerBuilder, Ajax, Adobe Flex, and others. It permits storyboard testing, automated testing, data-driven testing, and test scripting.
 
-Sahi \cite{sahi} is an open-source automation and testing tool for web applications. It allows recording and replaying across browsers, provides different language drivers for writing test scripts, and supports Ajax and highly dynamic web applications. 
+Sahi \footnote{Sahi: http://sahi.co.in/} is an open-source automation and testing tool for web applications. It allows recording and replaying across browsers, provides different language drivers for writing test scripts, and supports Ajax and highly dynamic web applications. 
 
 \section{Data Mining}\label{sec:datamining}
 
@@ -52,27 +63,23 @@ The goal of data mining is to extract information from a dataset, or past data, 
 	\item[Regression] aims to fit an equation into a dataset, in order to predict one or more continuous variables, such as profit or loss, based on other attributes in the dataset.
 \end{description}
 
-The performance of an algorithm depends greatly on the characteristics of the data. There is no single algorithm that works best on all given problems \cite{wolpert1995no} so it is recommended to try 
+The performance of an algorithm depends greatly on the characteristics of the data. There is no single algorithm that works best on all given problems \cite{wolpert1995no} so in the interest of determining the best approach, 
+% TODO - FINISH %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\subsection{Knowledge Learning to on Web applications}
-%Information Extraction from HTML: Application of a General Machine Learning Approach
-%A knowledge learning approach to information extraction from multiple text based Web sites
+\subsection{Data Mining Tools}
+Except in rare cases of very specific problems, it typically makes no sense for someone to implement any data mining algorithm that they might need. There are many data mining tools (many of which free) that already implement many of those algorithms and have customization capabilities that make it easy to adapt them to most problems. A data mining tool is a powerful software that makes use of data mining algorithms, and supports a complete KDD process \cite{mikut2011data}. In the following sections we will briefly address some of the most commonly used tools, namely, RapidMiner, WEKA and R.
 
+\subsubsection{RapidMiner}
+RapidMiner \footnote{http://www.rapidminer.com} is a complete solution for data mining problems. It’s available as a standalone GUI based application, as seen in Figure 2.3. It is a commercial application, although its core and earlier versions are distributed under an open source license and it offers a free version, beyond its multiple paid versions. Being one of the most popular data mining tools used today, its applications span several domains, including education, training, industrial and personal applications, among others. Its functionality can also be easily extended through the use of plugins. reflecting in
+% TODO - FINISH %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\subsubsection{WEKA}
+% TODO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Data Analysis Tools}
-  are
-
-
-%\section{Execution Trace Extraction Tools} \label{sec:exectracetools}
-%AVID, Jinsight, jRMTool, Together ControlCenter
+\subsubsection{R}
+% TODO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Patterns}\label{sec:patterns}
 User Interaction (UI) patterns are well-documented in a various number of sources \cite{tidwell2010designing,van2001patterns, neil12standard,sinnig2005patterns}. The patterns already supported (like the Search and Master/Detail patterns) enter the list of most popular patterns, according to the sources found, and if the selection of supported patterns were to be broadened, the pick of the next one(s) would be heavily influenced by the literature.
-
-
-%\section{Pattern Mining} \label{sec:patternmining}
-
-
-
+% TODO - FINISH %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Chapter Conclusions}

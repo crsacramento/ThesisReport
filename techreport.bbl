@@ -38,6 +38,12 @@ Michael Benedikt, Juliana Freire, and Patrice Godefroid.
 \newblock In {\em In Proceedings of 11th International World Wide Web
   Conference (WW W’2002}. Citeseer, 2002.
 
+\bibitem[Bri99]{brin1999extracting}
+Sergey Brin.
+\newblock Extracting patterns and relations from the world wide web.
+\newblock In {\em The World Wide Web and Databases}, pages 172--183. Springer,
+  1999.
+
 \bibitem[CC{\etalchar{+}}90]{chikofsky1990reverse}
 Elliot~J Chikofsky, James~H Cross, et~al.
 \newblock Reverse engineering and design recovery: A taxonomy.
@@ -47,6 +53,18 @@ Elliot~J Chikofsky, James~H Cross, et~al.
 Gerardo Canfora, Massimiliano Di~Penta, and Luigi Cerulo.
 \newblock Achievements and challenges in software reverse engineering.
 \newblock {\em Communications of the ACM}, 54(4):142--151, 2011.
+
+\bibitem[CEF{\etalchar{+}}04]{chakrabarti2004data}
+Soumen Chakrabarti, Martin Ester, Usama Fayyad, Johannes Gehrke, Jiawei Han,
+  Shinichi Morishita, Gregory Piatetsky-Shapiro, and Wei Wang.
+\newblock Data mining curriculum: A proposal (version 0.91).
+\newblock 2004.
+
+\bibitem[CHL03]{chang2003automatic}
+Chia-Hui Chang, Chun-Nan Hsu, and Shao-Cheng Lui.
+\newblock Automatic information extraction from semi-structured web pages by
+  pattern discovery.
+\newblock {\em Decision Support Systems}, 35(1):129--147, 2003.
 
 \bibitem[CL02]{constantine2002usage}
 Larry~L Constantine and Lucy~AD Lockwood.
@@ -117,18 +135,42 @@ Michael Fischer, Johann Oberleitner, Harald Gall, and Thomas Gschwind.
 \newblock In {\em Program Comprehension, 2005. IWPC 2005. Proceedings. 13th
   International Workshop on}, pages 237--246. IEEE, 2005.
 
+\bibitem[FPSS96]{fayyad1996data}
+Usama Fayyad, Gregory Piatetsky-Shapiro, and Padhraic Smyth.
+\newblock From data mining to knowledge discovery in databases.
+\newblock {\em AI magazine}, 17(3):37, 1996.
+
+\bibitem[Fre98]{freitag1998information}
+Dayne Freitag.
+\newblock Information extraction from html: Application of a general machine
+  learning approach.
+\newblock In {\em AAAI/IAAI}, pages 517--523, 1998.
+
 \bibitem[G{\etalchar{+}}05]{garrett2005ajax}
 Jesse~James Garrett et~al.
 \newblock Ajax: A new approach to web applications, 2005.
 
-\bibitem[HKP06]{han2006data}
-Jiawei Han, Micheline Kamber, and Jian Pei.
-\newblock {\em Data mining: concepts and techniques}.
-\newblock Morgan kaufmann, 2006.
-
 \bibitem[jpf]{jpf}
 Java path finder.
 \newblock Accessed: 2014-01-21.
+
+\bibitem[MPFC12]{morgado2012gui}
+In{\^e}s~Coimbra Morgado, Ana~CR Paiva, Joao~Pascoal Faria, and Rui Camacho.
+\newblock Gui reverse engineering with machine learning.
+\newblock In {\em Realizing Artificial Intelligence Synergies in Software
+  Engineering (RAISE), 2012 First International Workshop on}, pages 27--31.
+  IEEE, 2012.
+
+\bibitem[MR05]{maimon2005data}
+Oded~Z Maimon and Lior Rokach.
+\newblock {\em Data mining and knowledge discovery handbook}.
+\newblock Springer, 2005.
+
+\bibitem[MR11]{mikut2011data}
+Ralf Mikut and Markus Reischl.
+\newblock Data mining tools.
+\newblock {\em Wiley Interdisciplinary Reviews: Data Mining and Knowledge
+  Discovery}, 1(5):431--443, 2011.
 
 \bibitem[MvDR12]{mesbah2012invariant}
 Ali Mesbah, Arie van Deursen, and Danny Roest.
@@ -152,10 +194,6 @@ Michael~J Pacione, Marc Roper, and Murray Wood.
 \newblock In {\em 10th Working Conference on Reverse Engineering}, pages
   80--89, 2003.
 
-\bibitem[rft]{rft}
-Ibm - rational functional tester - united states.
-\newblock Accessed: 2014-02-06.
-
 \bibitem[Roe10]{roest2010automated}
 Danny Roest.
 \newblock Automated regression testing of ajax web applications.
@@ -166,19 +204,11 @@ Filippo Ricca and Paolo Tonella.
 \newblock Understanding and restructuring web sites with reweb.
 \newblock {\em Multimedia, IEEE}, 8(2):40--51, 2001.
 
-\bibitem[sah]{sahi}
-Sahi web test automation tool.
-\newblock Accessed: 2014-02-06.
-
 \bibitem[SCFP00]{steven2000jrapture}
 John Steven, Pravir Chandra, Bob Fleck, and Andy Podgurski.
 \newblock {\em jRapture: A capture/replay tool for observation-based testing},
   volume~25.
 \newblock ACM, 2000.
-
-\bibitem[sel]{selenium}
-Selenium documentation.
-\newblock Accessed: 2014-01-22.
 
 \bibitem[SGR{\etalchar{+}}05]{sinnig2005patterns}
 Daniel Sinnig, Ashraf Gaffar, Daniel Reichart, Peter Forbrig, and Ahmed Seffah.
@@ -202,8 +232,10 @@ Martijn Van~Welie, Gerrit~C Van Der~Veer, and Anton Eli{\"e}ns.
 \newblock In {\em Tools for Working with Guidelines}, pages 313--324. Springer,
   2001.
 
-\bibitem[wat]{watir}
-Watir webdriver | the most elegant way to use webdriver with ruby.
-\newblock Accessed: 2014-01-22.
+\bibitem[WM95]{wolpert1995no}
+David~H Wolpert and William~G Macready.
+\newblock No free lunch theorems for search.
+\newblock Technical report, Technical Report SFI-TR-95-02-010, Santa Fe
+  Institute, 1995.
 
 \end{thebibliography}
