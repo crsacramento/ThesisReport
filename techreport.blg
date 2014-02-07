@@ -5,6 +5,7 @@ A level-1 auxiliary file: acknows_en.aux
 A level-1 auxiliary file: abbrevs_en.aux
 A level-1 auxiliary file: intro.aux
 A level-1 auxiliary file: background.aux
+A level-1 auxiliary file: approach.aux
 A level-1 auxiliary file: workplan.aux
 A level-1 auxiliary file: conclusions.aux
 The style file: alpha.bst
@@ -14,8 +15,17 @@ Warning--entry type for "neil12standard" isn't style-file defined
 Warning--entry type for "jpf" isn't style-file defined
 --line 149 of file references.bib
 Warning--entry type for "selenium" isn't style-file defined
---line 243 of file references.bib
+--line 319 of file references.bib
+Warning--entry type for "watir" isn't style-file defined
+--line 325 of file references.bib
+Warning--entry type for "rft" isn't style-file defined
+--line 331 of file references.bib
+Warning--entry type for "sahi" isn't style-file defined
+--line 337 of file references.bib
 Warning--to sort, need author or key in jpf
 Warning--to sort, need author or key in selenium
+Warning--to sort, need author or key in watir
+Warning--to sort, need author or key in rft
+Warning--to sort, need author or key in sahi
 Warning--can't use both volume and number fields in steven2000jrapture
-(There were 6 warnings)
+(There were 12 warnings)

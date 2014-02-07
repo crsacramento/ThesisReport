@@ -13,30 +13,56 @@ There are two methods of applying reverse engineering to a system: the dynamic m
 
 \subsection{Extraction of Information from Execution Traces} \label{sec:extractexecutiontraces}
 
-Plenty of approaches that extract information from execution traces have been found. TraceServer \cite{andjelkovic2011trace} is an extension of the Java PathFinder model checking tool \cite{jpf} which collects and analyzes execution traces. jRapture \cite{steven2000jrapture} is a technique and a tool for capture and replay of Java program executions. ReGUI \cite{coimbra2011reverse,coimbra2012dynamic} is a dynamic reverse engineering tool made to reduce the effort of modelling the structure and behaviour of a software application GUI. Duarte, Kramer and Uchitel defined an approach for behaviour model extraction which combines static and dynamic information \cite{duarte2006model}. Fischer \textit{et al.} developed a methodology a that analyzes and compares execution traces of different versions of a software system to provide insights into its evolution, named EvoTrace \cite{fischer2005system}. Amalfitano's approach \cite{amalfitano2010rich} generates test cases from execution traces to help testing from Rich Internet Applications (RIAs), with the execution traces being obtained from user sessions and crawling the application. 
+Plenty of approaches that extract information from execution traces have been found. 
+TraceServer \cite{andjelkovic2011trace} is an extension of the Java PathFinder model checking tool \cite{jpf} which collects and analyzes execution traces. jRapture \cite{steven2000jrapture} is a technique and a tool for capture and replay of Java program executions. ReGUI \cite{coimbra2011reverse,coimbra2012dynamic} is a dynamic reverse engineering tool made to reduce the effort of modelling the structure and behaviour of a software application GUI. Duarte, Kramer and Uchitel defined an approach for behaviour model extraction which combines static and dynamic information \cite{duarte2006model}. Fischer \textit{et al.} developed a methodology that analyzes and compares execution traces of different versions of a software system to provide insights into its evolution, named EvoTrace \cite{fischer2005system}. Amalfitano's approach \cite{amalfitano2010rich} generates test cases from execution traces to help testing from Rich Internet Applications (RIAs), with the execution traces being obtained from user sessions and crawling the application. 
 
 % TODO - ADD MORE
 
 \subsection{Extraction of Information from Web Applications}
 The following approaches extract information from Web applications for analysis and processing. 
 
-Ricca and Tonella's ReWeb \cite{ricca2001understanding} dynamically extracts information from a Web application's server logs to analyze its structure and evolution, and so aims to find inconsistencies and connectivity problems. 
-Mesbah \textit{et al.} proposed \cite{mesbah2012invariant} an automated technique for generating test cases with invariants from models inferred through dynamic crawling. 
-Another approach by Mesbah \textit{et al.}, named FeedEx \cite{fard2013feedback} uses a greedy algorithm to partially crawl a RIA's GUI, in order to derive test models. Benedikt \textit{et al.} introduced a framework called Veriweb \cite{benedikt2002veriweb} that discovers and explores automatically Web-site execution paths that can be followed by a user in a Web application. Dallmeier \textit{et al.}'s Webmate \cite{dallmeier2012webmate,dallmeier2013webmate} is a tool that analyzes the web application under test, identifies all functionally different states, and is then able to navigate to each of these states at the user’s request. Crawljax \cite{roest2010automated} is a tool that obtains graphical sitemaps by automatically crawling through a Web application. WebDiff \cite{choudhary2010webdiff} is a tool that searches for cross-browser inconsistencies by analyzing a website's DOM and comparing screenshots obtained in different browsers. Di Lucca \textit{et al.}'s approach \cite{di2005integrating} integrates WARE \cite{di2004reverse}, a static analysis tool that generates UML diagrams from a Web application's source code, and WANDA \cite{antoniol2004understanding}, a Web application dynamic analysis tool, to identify groups of equivalent built client pages and to enable a better understanding of the aplication under study. 
-
+Ricca and Tonella's ReWeb \cite{ricca2001understanding} dynamically extracts information from a Web application's server logs to analyze its structure and evolution, and so aims to find inconsistencies and connectivity problems. Benedikt \textit{et al.} introduced a framework called VeriWeb \cite{benedikt2002veriWeb} that discovers and explores automatically Web-site execution paths that can be followed by a user in a Web application.
+Di Lucca \textit{et al.}'s approach \cite{di2005integrating} integrates WARE \cite{di2004reverse}, a static analysis tool that generates UML diagrams from a Web application's source code, and WANDA \cite{antoniol2004understanding}, a Web application dynamic analysis tool, to identify groups of equivalent built client pages and to enable a better understanding of the aplication under study. 
+Crawljax \cite{roest2010automated} is a tool that obtains graphical sitemaps by automatically crawling through a Web application. WebDiff \cite{choudhary2010Webdiff} is a tool that searches for cross-browser inconsistencies by analyzing a Website's DOM and comparing screenshots obtained in different browsers. 
+Mesbah \textit{et al.} proposed an automated technique for generating test cases with invariants from models inferred through dynamic crawling \cite{mesbah2012invariant}. 
+Artzi \textit{et al.} developed a tool called Artemis \cite{artzi2011framework} which performs feedback-directed random test case generation for Javascript Web applications. Artemis triggers events at random, but the events are prioritized by less covered branch coverage in previous sequences.
+Amalfitano \textit{et al.} developed a semi-automatic approach \cite{amalfitano2011using} that uses dynamic analysis of a Web application to generate end user documentation, compliant with known standards and guidelines for software user documentation. 
+Another approach by Mesbah \textit{et al.}, named FeedEx \cite{fard2013feedback} is a feedback-directed Web application exploration technique to derive test models. It uses a greedy algorithm to partially crawl a RIA's GUI, and the goal is that the derived test model capture different aspects of the given Web application’s client-side functionality.  Dallmeier \textit{et al.}'s Webmate \cite{dallmeier2012Webmate,dallmeier2013Webmate} is a tool that analyzes the Web application under test, identifies all functionally different states, and is then able to navigate to each of these states at the user’s request. 
 
 \subsection{Capture-Replay Tools}
 
-Selenium \cite{selenium} is an open-source capture/replay tool that captures an user's interaction with a Web application in HTML files.
+Selenium \cite{selenium} is an open-source capture/replay tool that captures an user's interaction with a Web application in HTML files. It has multi browser, OS and language support, can be installed server-side and as a Mozilla Firefox add-on, has its own IDE \textit{(Integrated Development Environment)}, and allows recording and playback of tests.
+
+Watir Webdriver \cite{watir} is is an open-source (BSD) family of Ruby libraries for automating Web browsers and Web application testing. It has multi browser and OS support, a rich API, and has a functionality for non-tech users: the ‘Simple’ class. There also exist ports for other programming languages, such as Watij (for Java) and Watin (.NET).
+
+IBM Rational Functional Tester (RFT) \cite{rft} is an automated functional testing and regression testing tool. This software provides automated testing capabilities for functional, regression, GUI, and data-driven testing. Rational Function Tester supports a range of applications, such as .Net, Java, Siebel, SAP, terminal emulator-based applications, PowerBuilder, Ajax, Adobe Flex, and others. It permits storyboard testing, automated testing, data-driven testing, and test scripting.
+
+Sahi \cite{sahi} is an open-source automation and testing tool for web applications. It allows recording and replaying across browsers, provides different language drivers for writing test scripts, and supports Ajax and highly dynamic web applications. 
 
 \section{Data Mining}\label{sec:datamining}
 
-\begin{description}
-\item[Data Analysis Algorithms]  are
-%Information Extraction from HTML: Application of a General Machine Learning Approach
+Data mining is \textit{“(...) the non-trivial extraction of previously unknown and potentially useful information from data”} \cite{fayyad1996data}. It is the analysis step of a Knowledge Discovery in Databases 18 (KDD) process, and an interdisciplinary sub-field of computer science. It combines artificial intelligence, machine learning, statistics and database systems \cite{chakrabarti2004data}.
 
-\item[Data Analysis Tools]  are
+The goal of data mining is to extract information from a dataset, or past data, and transform it into an understandable structure. Discovering information from data takes two major forms: description and prediction \cite{maimon2005data}. Common types of data mining analysis include:
+\begin{description}
+	\item[Anomaly detection] (can also be called outlier/change/deviation detection) involves getting a sense of the typical cases that the dataset tends to contain, to better detect cases that are different from the regular pattern.
+	\item[Association learning] aim to find correlations between different attributes in a dataset.
+	\item[Cluster detection] is the task of discovering groups and structures in the data that are in some way or another "similar", without using known structures in the data.
+	\item[Classification] classifies new cases based on pre-determined categories. Learning from a large set of pre-classified examples, algorithms can detect systematic differences between items in each group and apply these corresponding models to new classification problems.
+	\item[Regression] aims to fit an equation into a dataset, in order to predict one or more continuous variables, such as profit or loss, based on other attributes in the dataset.
 \end{description}
+
+The performance of an algorithm depends greatly on the characteristics of the data. There is no single algorithm that works best on all given problems \cite{wolpert1995no} so it is recommended to try 
+
+%\subsection{Knowledge Learning to on Web applications}
+%Information Extraction from HTML: Application of a General Machine Learning Approach
+%A knowledge learning approach to information extraction from multiple text based Web sites
+
+
+
+\subsection{Data Analysis Tools}
+  are
+
 
 %\section{Execution Trace Extraction Tools} \label{sec:exectracetools}
 %AVID, Jinsight, jRMTool, Together ControlCenter

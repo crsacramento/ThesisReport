@@ -7,6 +7,12 @@ Igor Andjelkovic and Cyrille Artho.
   traces.
 \newblock In {\em JPF Workshop, Lawrence, USA}, 2011.
 
+\bibitem[ADJ{\etalchar{+}}11]{artzi2011framework}
+Shay Artzi, Julian Dolby, Simon~Holm Jensen, Anders Moller, and Frank Tip.
+\newblock A framework for automated testing of javascript web applications.
+\newblock In {\em Software Engineering (ICSE), 2011 33rd International
+  Conference on}, pages 571--580. IEEE, 2011.
+
 \bibitem[ADPZ04]{antoniol2004understanding}
 Giuliano Antoniol, Massimiliano Di~Penta, and Michele Zazzara.
 \newblock Understanding web applications through dynamic analysis.
@@ -19,11 +25,18 @@ Domenico Amalfitano, Anna~Rita Fasolino, and Porfirio Tramontana.
 \newblock In {\em Software Testing, Verification, and Validation Workshops
   (ICSTW), 2010 Third International Conference on}, pages 274--283. IEEE, 2010.
 
-\bibitem[BFG02]{benedikt02veriweb}
+\bibitem[AFT11]{amalfitano2011using}
+Domenico Amalfitano, Anna~Rita Fasolino, and Porfirio Tramontana.
+\newblock Using dynamic analysis for generating end user documentation for web
+  2.0 applications.
+\newblock In {\em Web Systems Evolution (WSE), 2011 13th IEEE International
+  Symposium on}, pages 11--20. IEEE, 2011.
+
+\bibitem[BFG02]{benedikt2002veriWeb}
 Michael Benedikt, Juliana Freire, and Patrice Godefroid.
 \newblock Veriweb: Automatically testing dynamic web sites.
 \newblock In {\em In Proceedings of 11th International World Wide Web
-  Conference (WW W’2002}, 2002.
+  Conference (WW W’2002}. Citeseer, 2002.
 
 \bibitem[CC{\etalchar{+}}90]{chikofsky1990reverse}
 Elliot~J Chikofsky, James~H Cross, et~al.
@@ -34,6 +47,11 @@ Elliot~J Chikofsky, James~H Cross, et~al.
 Gerardo Canfora, Massimiliano Di~Penta, and Luigi Cerulo.
 \newblock Achievements and challenges in software reverse engineering.
 \newblock {\em Communications of the ACM}, 54(4):142--151, 2011.
+
+\bibitem[CL02]{constantine2002usage}
+Larry~L Constantine and Lucy~AD Lockwood.
+\newblock Usage-centered engineering for web applications.
+\newblock {\em Software, IEEE}, 19(2):42--50, 2002.
 
 \bibitem[CMPPF11]{coimbra2011reverse}
 In{\^e}s Coimbra~Morgado, Ana Paiva, and Jo{\~a}o Pascoal~Faria.
@@ -47,11 +65,24 @@ In{\^e}s Coimbra~Morgado, Ana~CR Paiva, and Jo{\~a}o Pascoal~Faria.
 \newblock {\em International Journal On Advances in Software}, 5(3 and
   4):224--236, 2012.
 
-\bibitem[DBOZ12]{dallmeier2012webmate}
+\bibitem[CVO10]{choudhary2010Webdiff}
+Shauvik~Roy Choudhary, Husayn Versee, and Alessandro Orso.
+\newblock Webdiff: Automated identification of cross-browser issues in web
+  applications.
+\newblock In {\em Software Maintenance (ICSM), 2010 IEEE International
+  Conference on}, pages 1--10. IEEE, 2010.
+
+\bibitem[DBOZ12]{dallmeier2012Webmate}
 Valentin Dallmeier, Martin Burger, Tobias Orth, and Andreas Zeller.
 \newblock Webmate: a tool for testing web 2.0 applications.
 \newblock In {\em Proceedings of the Workshop on JavaScript Tools}, pages
   11--15. ACM, 2012.
+
+\bibitem[DBOZ13]{dallmeier2013Webmate}
+Valentin Dallmeier, Martin Burger, Tobias Orth, and Andreas Zeller.
+\newblock Webmate: Generating test cases for web 2.0.
+\newblock In {\em Software Quality. Increasing Value in Software and Systems
+  Development}, pages 55--69. Springer, 2013.
 
 \bibitem[DKU06]{duarte2006model}
 Lucio~Mauro Duarte, Jeff Kramer, and Sebastian Uchitel.
@@ -86,6 +117,15 @@ Michael Fischer, Johann Oberleitner, Harald Gall, and Thomas Gschwind.
 \newblock In {\em Program Comprehension, 2005. IWPC 2005. Proceedings. 13th
   International Workshop on}, pages 237--246. IEEE, 2005.
 
+\bibitem[G{\etalchar{+}}05]{garrett2005ajax}
+Jesse~James Garrett et~al.
+\newblock Ajax: A new approach to web applications, 2005.
+
+\bibitem[HKP06]{han2006data}
+Jiawei Han, Micheline Kamber, and Jian Pei.
+\newblock {\em Data mining: concepts and techniques}.
+\newblock Morgan kaufmann, 2006.
+
 \bibitem[jpf]{jpf}
 Java path finder.
 \newblock Accessed: 2014-01-21.
@@ -100,11 +140,21 @@ T.~Neil.
 \newblock 12 standard screen patterns.
 \newblock Accessed: 2014-01-22.
 
+\bibitem[NPCF13]{nabuco2013inferring}
+Miguel Nabuco, Ana~CR Paiva, Rui Camacho, and Joao~Pascoal Faria.
+\newblock Inferring ui patterns with inductive logic programming.
+\newblock In {\em Information Systems and Technologies (CISTI), 2013 8th
+  Iberian Conference on}, pages 1--5. IEEE, 2013.
+
 \bibitem[PRW03]{pacione2003comparative}
 Michael~J Pacione, Marc Roper, and Murray Wood.
 \newblock A comparative evaluation of dynamic visualisation tools.
 \newblock In {\em 10th Working Conference on Reverse Engineering}, pages
   80--89, 2003.
+
+\bibitem[rft]{rft}
+Ibm - rational functional tester - united states.
+\newblock Accessed: 2014-02-06.
 
 \bibitem[Roe10]{roest2010automated}
 Danny Roest.
@@ -115,6 +165,10 @@ Danny Roest.
 Filippo Ricca and Paolo Tonella.
 \newblock Understanding and restructuring web sites with reweb.
 \newblock {\em Multimedia, IEEE}, 8(2):40--51, 2001.
+
+\bibitem[sah]{sahi}
+Sahi web test automation tool.
+\newblock Accessed: 2014-02-06.
 
 \bibitem[SCFP00]{steven2000jrapture}
 John Steven, Pravir Chandra, Bob Fleck, and Andy Podgurski.
@@ -147,5 +201,9 @@ Martijn Van~Welie, Gerrit~C Van Der~Veer, and Anton Eli{\"e}ns.
 \newblock Patterns as tools for user interface design.
 \newblock In {\em Tools for Working with Guidelines}, pages 313--324. Springer,
   2001.
+
+\bibitem[wat]{watir}
+Watir webdriver | the most elegant way to use webdriver with ruby.
+\newblock Accessed: 2014-01-22.
 
 \end{thebibliography}
