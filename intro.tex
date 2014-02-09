@@ -13,7 +13,20 @@ Despite the relevance that Web applications have in the community, they still su
 GUIs \textit{(Graphical User Interfaces)} of all kinds are populated with recurring behaviours that vary slightly. For example, authentication \textit{(login/password)} is a common behaviour in many software applications. However, the implementation of those behaviours may vary significantly. For a login, in some cases an error message may appear when the authentication fails; in others, the software application simply erases the inserted data and doesn't send a message to the user. These behaviours (patterns) are called User Interface (UI) patterns \cite{van2001patterns} and are recurring solutions that solve common design problems. Due to their widespread use, UI patterns allow users a sense of familiarity and comfort when using applications.
 
 \section{Motivation and Objectives} \label{sec:goals}
-The proposal aims to continue the work done on PARADIGM-RE, a reverse engineering tool designed to extract common interface patterns from Web applications \cite{nabuco2013inferring}. This tool identifies interface patterns using Machine Learning inference with the Aleph ILP system \footnote{Aleph: http://www.cs.ox.ac.uk/activities/machlearn/Aleph/aleph\_toc.html}.
+This thesis is part of an investigation project named PBGT \textit{(Pattern-based GUI Testing)} \cite{moreira2013pattern}. The goal of this investigation project is to develop a model-based GUI testing tool and approach, usable as an industrial tool. This project has five parts: a DSL \textit{(Domain Specific Language)} named \textbf{PARADIGM} to define GUI testing models based on UI patterns; a modelation and testing environment, named \textbf{PARADIGM-ME}, made to support the creation of test models; an automatic test case generation tool, named \textbf{PARADIGM-TG}, that generates test cases from test models defined in PARADIGM; a test case execution tool, named \textbf{PARADIGM-TE}, which executes test cases, analyzes their coverage, and returns detailed execution reports; and finally \textbf{PARADIGM-RE}, a Web application reverse engineering tool whose purpose is to extract UI patterns from Web pages without access to their source code, and use the extracted patterns to generate a test model defined in PARADIGM. 
+
+The relationship between the different components can be better understood in Figure \ref{fig:pbgt}. The activities (rounded corner rectangles) with the human figure mean that they are not fully automatic requiring manual intervention. The activities with the cog mean that part (or all) of that activity is automatic. The numbers within the activities define their sequencing.
+
+\begin{figure}[htb]
+  \begin{center}
+    \leavevmode
+    \includegraphics[width=0.8\textwidth]{pbgt}
+  	\caption{An overview of the PBGT project \cite{nabuco2013inferring}}
+  	\label{fig:pbgt}
+   \end{center}
+\end{figure}
+
+The proposal aims to continue the work done on PARADIGM-RE \cite{nabuco2013inferring}. This tool identifies interface patterns using Machine Learning inference with the Aleph ILP system \footnote{Aleph: http://www.cs.ox.ac.uk/activities/machlearn/Aleph/aleph\_toc.html}. The tool was extended in \cite{nabuco2014inferring}, introducing a 
 
 Considering the problem described and the proposed solution, the main goal for this research work is
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.1.31)  7 FEB 2014 14:29
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.1.31)  9 FEB 2014 00:03
 entering extended mode
 **C:/Users/gekka_000/Documents/GitHub/ThesisReport/techreport.tex
 (C:/Users/gekka_000/Documents/GitHub/ThesisReport/techreport.tex
@@ -1139,47 +1139,84 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 1.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 16.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 16.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 16.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [1
 
 
-])
-[2] (C:\Users\gekka_000\Documents\GitHub\ThesisReport\background.tex
+]
+<figures/pbgt.png, id=263, 380.92313pt x 338.01282pt>
+File: figures/pbgt.png Graphic file (type png)
+ <use figures/pbgt.png>
+Package pdftex.def Info: figures/pbgt.png used on input line 23.
+(pdftex.def)             Requested size: 341.43437pt x 302.98119pt.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 29.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 29.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 29.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2 <C:/Users/gekka_000/Documents/GitHub/ThesisReport/figures/pbgt.png>]) [3]
+(C:\Users\gekka_000\Documents\GitHub\ThesisReport\background.tex [4
+
+
+
+]
 Chapter 2.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 14.
-[3
+[5]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-
-] [4]
+ [6]
+[7]
 Overfull \hbox (3.51663pt too wide) in paragraph at lines 59--60
 []\T1/ptm/m/n/10.95 (can also be called out-lier/change/de-vi-a-tion de-tec-tio
 n) in-volves get-ting a sense
  []
 
-[5]
-Overfull \hbox (26.08453pt too wide) in paragraph at lines 83--85
+<figures/rapidminer.png, id=386, 880.28876pt x 608.2725pt>
+File: figures/rapidminer.png Graphic file (type png)
+
+<use figures/rapidminer.png>
+Package pdftex.def Info: figures/rapidminer.png used on input line 78.
+(pdftex.def)             Requested size: 256.07741pt x 176.94211pt.
+ [8]
+<figures/weka.png, id=399, 435.6275pt x 210.7875pt>
+File: figures/weka.png Graphic file (type png)
+ <use figures/weka.png>
+Package pdftex.def Info: figures/weka.png used on input line 90.
+(pdftex.def)             Requested size: 256.07741pt x 123.90681pt.
+
+Underfull \vbox (badness 5359) has occurred while \output is active []
+
+ [9 <C:/Users/gekka_000/Documents/GitHub/ThesisReport/figures/rapidminer.png (P
+NG copy)> <C:/Users/gekka_000/Documents/GitHub/ThesisReport/figures/weka.png (P
+NG copy)>]
+<figures/traminer.png, id=415, 397.485pt x 289.83281pt>
+File: figures/traminer.png Graphic file (type png)
+
+<use figures/traminer.png>
+Package pdftex.def Info: figures/traminer.png used on input line 110.
+(pdftex.def)             Requested size: 341.43437pt x 248.9683pt.
+ [10]
+Overfull \hbox (26.08453pt too wide) in paragraph at lines 120--121
 \T1/ptm/m/n/10.95 User In-ter-ac-tion (UI) pat-terns are well-documented in a v
 ar-i-ous num-ber of sources [[], [],
  []
 
-[6]) [7] (C:\Users\gekka_000\Documents\GitHub\ThesisReport\approach.tex
-[8
+) [11 <C:/Users/gekka_000/Documents/GitHub/ThesisReport/figures/traminer.png>]
+(C:\Users\gekka_000\Documents\GitHub\ThesisReport\approach.tex [12
 
 
 
 ]
 Chapter 3.
-) [9] (C:\Users\gekka_000\Documents\GitHub\ThesisReport\workplan.tex [10
+) [13] (C:\Users\gekka_000\Documents\GitHub\ThesisReport\workplan.tex [14
 
 
 
@@ -1192,29 +1229,29 @@ File: omsptm.fd
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 13.
 
-<figures/gantt_en.png, id=389, 714.41907pt x 124.21407pt>
+<figures/gantt_en.png, id=464, 714.41907pt x 124.21407pt>
 File: figures/gantt_en.png Graphic file (type png)
 
 <use figures/gantt_en.png>
 Package pdftex.def Info: figures/gantt_en.png used on input line 27.
 (pdftex.def)             Requested size: 426.79135pt x 74.2049pt.
-) [11 <C:/Users/gekka_000/Documents/GitHub/ThesisReport/figures/gantt_en.png>] 
-[12]
+) [15 <C:/Users/gekka_000/Documents/GitHub/ThesisReport/figures/gantt_en.png>] 
+[16]
 (C:\Users\gekka_000\Documents\GitHub\ThesisReport\conclusions.tex
 Chapter 5.
-) [13
+) [17
 
 
 
-] [14
+] [18
 
 
 ] (C:\Users\gekka_000\Documents\GitHub\ThesisReport\techreport.bbl
-[15
+[19
 
-] [16])
+] [20] [21])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 171.
- [17]
+ [22]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 171.
 
 (C:\Users\gekka_000\Documents\GitHub\ThesisReport\techreport.aux
@@ -1230,14 +1267,14 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 171.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 171.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 171.
 Package rerunfilecheck Info: File `techreport.out' has not changed.
-(rerunfilecheck)             Checksum: D477FA8417121E9A465D3A0C5F38C0D8;1724.
+(rerunfilecheck)             Checksum: E1B4C24531071F481DE99F71F2B08FB6;1739.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 171.
  ) 
 Here is how much of TeX's memory you used:
- 19125 strings out of 493921
- 345633 string characters out of 3147270
- 451447 words of memory out of 3000000
- 21841 multiletter control sequences out of 15000+200000
+ 19188 strings out of 493921
+ 346744 string characters out of 3147270
+ 452444 words of memory out of 3000000
+ 21871 multiletter control sequences out of 15000+200000
  73290 words of font info for 88 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  63i,11n,59p,1165b,490s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1246,9 +1283,9 @@ s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX
 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times
 /utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on techreport.pdf (37 pages, 226123 bytes).
+Output written on techreport.pdf (42 pages, 492399 bytes).
 PDF statistics:
- 471 PDF objects out of 1000 (max. 8388607)
- 125 named destinations out of 1000 (max. 500000)
- 236 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 555 PDF objects out of 1000 (max. 8388607)
+ 154 named destinations out of 1000 (max. 500000)
+ 256 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -32,6 +32,13 @@ Domenico Amalfitano, Anna~Rita Fasolino, and Porfirio Tramontana.
 \newblock In {\em Web Systems Evolution (WSE), 2011 13th IEEE International
   Symposium on}, pages 11--20. IEEE, 2011.
 
+\bibitem[BDLD08]{bernardi2008reverse}
+Mario~Luca Bernardi, Giuseppe~A Di~Lucca, and Damiano Distante.
+\newblock Reverse engineering of web applications to abstract user-centered
+  conceptual models.
+\newblock In {\em Web Site Evolution, 2008. WSE 2008. 10th International
+  Symposium on}, pages 101--110. IEEE, 2008.
+
 \bibitem[BFG02]{benedikt2002veriWeb}
 Michael Benedikt, Juliana Freire, and Patrice Godefroid.
 \newblock Veriweb: Automatically testing dynamic web sites.
@@ -43,6 +50,13 @@ Sergey Brin.
 \newblock Extracting patterns and relations from the world wide web.
 \newblock In {\em The World Wide Web and Databases}, pages 172--183. Springer,
   1999.
+
+\bibitem[BVBD{\etalchar{+}}11]{benjamin2011strategy}
+Kamara Benjamin, Gregor Von~Bochmann, Mustafa~Emre Dincturk, Guy-Vincent
+  Jourdan, and Iosif~Viorel Onut.
+\newblock {\em A strategy for efficient crawling of rich internet
+  applications}.
+\newblock Springer, 2011.
 
 \bibitem[CC{\etalchar{+}}90]{chikofsky1990reverse}
 Elliot~J Chikofsky, James~H Cross, et~al.
@@ -102,6 +116,13 @@ Valentin Dallmeier, Martin Burger, Tobias Orth, and Andreas Zeller.
 \newblock In {\em Software Quality. Increasing Value in Software and Systems
   Development}, pages 55--69. Springer, 2013.
 
+\bibitem[DCvB{\etalchar{+}}12]{dincturk2012statistical}
+Mustafa~Emre Dincturk, Suryakant Choudhary, Gregor von Bochmann, Guy-Vincent
+  Jourdan, and Iosif~Viorel Onut.
+\newblock A statistical approach for efficient crawling of rich internet
+  applications.
+\newblock In {\em Web Engineering}, pages 362--369. Springer, 2012.
+
 \bibitem[DKU06]{duarte2006model}
 Lucio~Mauro Duarte, Jeff Kramer, and Sebastian Uchitel.
 \newblock Model extraction using context information.
@@ -120,6 +141,12 @@ Giuseppe~Antonio Di~Lucca, Anna~Rita Fasolino, and Porfirio Tramontana.
 \newblock Reverse engineering web applications: the ware approach.
 \newblock {\em Journal of Software Maintenance and Evolution: Research and
   Practice}, 16(1-2):71--101, 2004.
+
+\bibitem[FA05]{fox2005using}
+John Fox and Robert Andersen.
+\newblock Using the r statistical computing environment to teach social
+  statistics courses.
+\newblock {\em Department of Sociology, McMaster University}, 2005.
 
 \bibitem[FM13]{fard2013feedback}
 A~Milani Fard and Ali Mesbah.
@@ -150,9 +177,27 @@ Dayne Freitag.
 Jesse~James Garrett et~al.
 \newblock Ajax: A new approach to web applications, 2005.
 
+\bibitem[HKP06]{han2006data}
+Jiawei Han, Micheline Kamber, and Jian Pei.
+\newblock {\em Data mining: concepts and techniques}.
+\newblock Morgan kaufmann, 2006.
+
 \bibitem[jpf]{jpf}
 Java path finder.
 \newblock Accessed: 2014-01-21.
+
+\bibitem[Lei02]{leisch2002sweave}
+Friedrich Leisch.
+\newblock Sweave: Dynamic generation of statistical reports using literate data
+  analysis.
+\newblock In {\em Compstat}, pages 575--580. Springer, 2002.
+
+\bibitem[LL08]{lin2008employing}
+James Lin and James~A Landay.
+\newblock Employing patterns and layers for early-stage design and prototyping
+  of cross-device user interfaces.
+\newblock In {\em Proceedings of the SIGCHI Conference on Human Factors in
+  Computing Systems}, pages 1313--1322. ACM, 2008.
 
 \bibitem[MPFC12]{morgado2012gui}
 In{\^e}s~Coimbra Morgado, Ana~CR Paiva, Joao~Pascoal Faria, and Rui Camacho.
@@ -160,6 +205,12 @@ In{\^e}s~Coimbra Morgado, Ana~CR Paiva, Joao~Pascoal Faria, and Rui Camacho.
 \newblock In {\em Realizing Artificial Intelligence Synergies in Software
   Engineering (RAISE), 2012 First International Workshop on}, pages 27--31.
   IEEE, 2012.
+
+\bibitem[MPM13]{moreira2013pattern}
+Rodrigo~MLM Moreira, Ana~CR Paiva, and Atif Memon.
+\newblock A pattern-based approach for gui modeling and testing.
+\newblock In {\em Software Reliability Engineering (ISSRE), 2013 IEEE 24th
+  International Symposium on}, pages 288--297. IEEE, 2013.
 
 \bibitem[MR05]{maimon2005data}
 Oded~Z Maimon and Lior Rokach.
@@ -188,11 +239,23 @@ Miguel Nabuco, Ana~CR Paiva, Rui Camacho, and Joao~Pascoal Faria.
 \newblock In {\em Information Systems and Technologies (CISTI), 2013 8th
   Iberian Conference on}, pages 1--5. IEEE, 2013.
 
+\bibitem[NPF14]{nabuco2014inferring}
+Miguel Nabuco, Ana~CR Paiva, and Joao~Pascoala Faria.
+\newblock Inferring user interface patterns from execution traces of web
+  applications.
+\newblock Manuscript submitted for publication, 2014.
+
 \bibitem[PRW03]{pacione2003comparative}
 Michael~J Pacione, Marc Roper, and Murray Wood.
 \newblock A comparative evaluation of dynamic visualisation tools.
 \newblock In {\em 10th Working Conference on Reverse Engineering}, pages
   80--89, 2003.
+
+\bibitem[PWL08]{pontico2008organizing}
+Florence Pontico, Marco Winckler, and Quentin Limbourg.
+\newblock Organizing user interface patterns for e-government applications.
+\newblock In {\em Engineering Interactive Systems}, pages 601--619. Springer,
+  2008.
 
 \bibitem[Roe10]{roest2010automated}
 Danny Roest.
