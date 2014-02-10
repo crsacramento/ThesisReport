@@ -32,6 +32,12 @@ Domenico Amalfitano, Anna~Rita Fasolino, and Porfirio Tramontana.
 \newblock In {\em Web Systems Evolution (WSE), 2011 13th IEEE International
   Symposium on}, pages 11--20. IEEE, 2011.
 
+\bibitem[AS{\etalchar{+}}94]{agrawal1994fast}
+Rakesh Agrawal, Ramakrishnan Srikant, et~al.
+\newblock Fast algorithms for mining association rules.
+\newblock In {\em Proc. 20th Int. Conf. Very Large Data Bases, VLDB}, volume
+  1215, pages 487--499, 1994.
+
 \bibitem[BDLD08]{bernardi2008reverse}
 Mario~Luca Bernardi, Giuseppe~A Di~Lucca, and Damiano Distante.
 \newblock Reverse engineering of web applications to abstract user-centered
@@ -142,6 +148,12 @@ Giuseppe~Antonio Di~Lucca, Anna~Rita Fasolino, and Porfirio Tramontana.
 \newblock {\em Journal of Software Maintenance and Evolution: Research and
   Practice}, 16(1-2):71--101, 2004.
 
+\bibitem[EKR03]{elbaum2003improving}
+Sebastian Elbaum, Srikanth Karre, and Gregg Rothermel.
+\newblock Improving web application testing with user session data.
+\newblock In {\em Proceedings of the 25th International Conference on Software
+  Engineering}, pages 49--59. IEEE Computer Society, 2003.
+
 \bibitem[FA05]{fox2005using}
 John Fox and Robert Andersen.
 \newblock Using the r statistical computing environment to teach social
@@ -182,6 +194,11 @@ Jiawei Han, Micheline Kamber, and Jian Pei.
 \newblock {\em Data mining: concepts and techniques}.
 \newblock Morgan kaufmann, 2006.
 
+\bibitem[HPY00]{han2000mining}
+Jiawei Han, Jian Pei, and Yiwen Yin.
+\newblock Mining frequent patterns without candidate generation.
+\newblock In {\em ACM SIGMOD Record}, volume~29, pages 1--12. ACM, 2000.
+
 \bibitem[jpf]{jpf}
 Java path finder.
 \newblock Accessed: 2014-01-21.
@@ -198,6 +215,12 @@ James Lin and James~A Landay.
   of cross-device user interfaces.
 \newblock In {\em Proceedings of the SIGCHI Conference on Human Factors in
   Computing Systems}, pages 1313--1322. ACM, 2008.
+
+\bibitem[Mem07]{memon2007event}
+Atif~M Memon.
+\newblock An event-flow model of gui-based applications for testing.
+\newblock {\em Software Testing, Verification and Reliability}, 17(3):137--157,
+  2007.
 
 \bibitem[MPFC12]{morgado2012gui}
 In{\^e}s~Coimbra Morgado, Ana~CR Paiva, Joao~Pascoal Faria, and Rui Camacho.
@@ -223,6 +246,12 @@ Ralf Mikut and Markus Reischl.
 \newblock {\em Wiley Interdisciplinary Reviews: Data Mining and Knowledge
   Discovery}, 1(5):431--443, 2011.
 
+\bibitem[MTR08]{marchetto2008state}
+Alessandro Marchetto, Paolo Tonella, and Filippo Ricca.
+\newblock State-based testing of ajax web applications.
+\newblock In {\em Software Testing, Verification, and Validation, 2008 1st
+  International Conference on}, pages 121--130. IEEE, 2008.
+
 \bibitem[MvDR12]{mesbah2012invariant}
 Ali Mesbah, Arie van Deursen, and Danny Roest.
 \newblock Invariant-based automatic testing of modern web applications.
@@ -244,6 +273,12 @@ Miguel Nabuco, Ana~CR Paiva, and Joao~Pascoala Faria.
 \newblock Inferring user interface patterns from execution traces of web
   applications.
 \newblock Manuscript submitted for publication, 2014.
+
+\bibitem[PHP{\etalchar{+}}01]{pinto2001multi}
+Helen Pinto, Jiawei Han, Jian Pei, Ke~Wang, Qiming Chen, and Umeshwar Dayal.
+\newblock Multi-dimensional sequential pattern mining.
+\newblock In {\em Proceedings of the tenth international conference on
+  Information and knowledge management}, pages 81--88. ACM, 2001.
 
 \bibitem[PRW03]{pacione2003comparative}
 Michael~J Pacione, Marc Roper, and Murray Wood.
@@ -267,6 +302,12 @@ Filippo Ricca and Paolo Tonella.
 \newblock Understanding and restructuring web sites with reweb.
 \newblock {\em Multimedia, IEEE}, 8(2):40--51, 2001.
 
+\bibitem[SB08]{songram2008closed}
+Panida Songram and Veera Boonjing.
+\newblock Closed multidimensional sequential pattern mining.
+\newblock {\em International Journal of Knowledge Management Studies},
+  2(4):460--479, 2008.
+
 \bibitem[SCFP00]{steven2000jrapture}
 John Steven, Pravir Chandra, Bob Fleck, and Andy Podgurski.
 \newblock {\em jRapture: A capture/replay tool for observation-based testing},
@@ -278,6 +319,14 @@ Daniel Sinnig, Ashraf Gaffar, Daniel Reichart, Peter Forbrig, and Ahmed Seffah.
 \newblock Patterns in model-based engineering.
 \newblock In {\em Computer-Aided Design of User Interfaces IV}, pages 197--210.
   Springer, 2005.
+
+\bibitem[SSG{\etalchar{+}}07]{sampath2007applying}
+Sreedevi Sampath, Sara Sprenkle, Emily Gibson, Lori Pollock, and Amie~Souter
+  Greenwald.
+\newblock Applying concept analysis to user-session-based testing of web
+  applications.
+\newblock {\em Software Engineering, IEEE Transactions on}, 33(10):643--658,
+  2007.
 
 \bibitem[Sys99]{systa1999dynamic}
 Tarja Syst{\"a}.
@@ -295,10 +344,22 @@ Martijn Van~Welie, Gerrit~C Van Der~Veer, and Anton Eli{\"e}ns.
 \newblock In {\em Tools for Working with Guidelines}, pages 313--324. Springer,
   2001.
 
+\bibitem[WKQ{\etalchar{+}}08]{wu2008top}
+Xindong Wu, Vipin Kumar, J~Ross Quinlan, Joydeep Ghosh, Qiang Yang, Hiroshi
+  Motoda, Geoffrey~J McLachlan, Angus Ng, Bing Liu, S~Yu Philip, et~al.
+\newblock Top 10 algorithms in data mining.
+\newblock {\em Knowledge and Information Systems}, 14(1):1--37, 2008.
+
 \bibitem[WM95]{wolpert1995no}
 David~H Wolpert and William~G Macready.
 \newblock No free lunch theorems for search.
 \newblock Technical report, Technical Report SFI-TR-95-02-010, Santa Fe
   Institute, 1995.
+
+\bibitem[YHA03]{yan2003clospan}
+Xifeng Yan, Jiawei Han, and Ramin Afshar.
+\newblock Clospan: Mining closed sequential patterns in large datasets.
+\newblock In {\em Proc. 2003 SIAM Int’l Conf. Data Mining (SDM’03)}, pages
+  166--177, 2003.
 
 \end{thebibliography}

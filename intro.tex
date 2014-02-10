@@ -10,28 +10,45 @@ Web applications are getting more and more important. Due to their stability and
 
 Despite the relevance that Web applications have in the community, they still suffer from a lack of standards and conventions \cite{constantine2002usage}, unlike desktop and mobile applications. This means that the same task can be implemented in many different ways, which makes automated testing difficult to accomplish and inhibits reuse of testing code.
 
-GUIs \textit{(Graphical User Interfaces)} of all kinds are populated with recurring behaviours that vary slightly. For example, authentication \textit{(login/password)} is a common behaviour in many software applications. However, the implementation of those behaviours may vary significantly. For a login, in some cases an error message may appear when the authentication fails; in others, the software application simply erases the inserted data and doesn't send a message to the user. These behaviours (patterns) are called User Interface (UI) patterns \cite{van2001patterns} and are recurring solutions that solve common design problems. Due to their widespread use, UI patterns allow users a sense of familiarity and comfort when using applications.
+GUIs \textit{(Graphical User Interfaces)} of all kinds are populated with recurring behaviors that vary slightly. For example, authentication \textit{(login/password)} is a common behavior in many software applications. However, the implementation of those behaviors may vary significantly. For a login, in some cases an error message may appear when the authentication fails; in others, the software application simply erases the inserted data and doesn't send a message to the user. These behaviors (patterns) are called User Interface (UI) patterns \cite{van2001patterns} and are recurring solutions that solve common design problems. Due to their widespread use, UI patterns allow users a sense of familiarity and comfort when using applications.
 
 \section{Motivation and Objectives} \label{sec:goals}
-This thesis is part of an investigation project named PBGT \textit{(Pattern-based GUI Testing)} \cite{moreira2013pattern}. The goal of this investigation project is to develop a model-based GUI testing tool and approach, usable as an industrial tool. This project has five parts: a DSL \textit{(Domain Specific Language)} named \textbf{PARADIGM} to define GUI testing models based on UI patterns; a modelation and testing environment, named \textbf{PARADIGM-ME}, made to support the creation of test models; an automatic test case generation tool, named \textbf{PARADIGM-TG}, that generates test cases from test models defined in PARADIGM; a test case execution tool, named \textbf{PARADIGM-TE}, which executes test cases, analyzes their coverage, and returns detailed execution reports; and finally \textbf{PARADIGM-RE}, a Web application reverse engineering tool whose purpose is to extract UI patterns from Web pages without access to their source code, and use the extracted patterns to generate a test model defined in PARADIGM. 
+
+This thesis is part of an investigation project named PBGT \textit{(Pattern-based GUI Testing)} \cite{moreira2013pattern}. The goal of this investigation project is to develop a model-based GUI testing tool and approach, usable as an industrial tool. This project has five parts: a DSL \textit{(Domain Specific Language)} named \textbf{PARADIGM} to define GUI testing models based on UI patterns; a modeling and testing environment, named \textbf{PARADIGM-ME}, made to support the creation of test models; an automatic test case generation tool, named \textbf{PARADIGM-TG}, that generates test cases from test models defined in PARADIGM; a test case execution tool, named \textbf{PARADIGM-TE}, which executes test cases, analyzes their coverage, and returns detailed execution reports; and finally \textbf{PARADIGM-RE}, a Web application reverse engineering tool whose purpose is to extract UI patterns from Web pages without access to their source code, and use the extracted patterns to generate a test model defined in PARADIGM. 
 
 The relationship between the different components can be better understood in Figure \ref{fig:pbgt}. The activities (rounded corner rectangles) with the human figure mean that they are not fully automatic requiring manual intervention. The activities with the cog mean that part (or all) of that activity is automatic. The numbers within the activities define their sequencing.
 
-\begin{figure}[htb]
+\begin{figure}[!htb]
   \begin{center}
     \leavevmode
     \includegraphics[width=0.8\textwidth]{pbgt}
-  	\caption{An overview of the PBGT project \cite{nabuco2013inferring}}
+  	\caption[An overview of the PBGT project]{An overview of the PBGT project \cite{nabuco2013inferring}}
   	\label{fig:pbgt}
    \end{center}
 \end{figure}
 
-The proposal aims to continue the work done on PARADIGM-RE \cite{nabuco2013inferring}. This tool identifies interface patterns using Machine Learning inference with the Aleph ILP system \footnote{Aleph: http://www.cs.ox.ac.uk/activities/machlearn/Aleph/aleph\_toc.html}. The tool was extended in \cite{nabuco2014inferring}, introducing a 
+The proposal aims to continue the work done on PARADIGM-RE \cite{nabuco2013inferring}. This tool identifies interface patterns using Machine Learning inference with the Aleph ILP system \footnote{Aleph: \url{http://www.cs.ox.ac.uk/activities/machlearn/Aleph/aleph\_toc.html}} running on user interaction execution traces produced using Selenium \footnote{Selenium: \url{http://docs.seleniumhq.org/}}. It was deemed necessary then to transform the whole process into an iterative one, with the model being updated at every iteration. 
 
-Considering the problem described and the proposed solution, the main goal for this research work is
+This was accomplished in \cite{nabuco2014inferring}, where the tool was extended with a pattern identifying module using heuristics. The current structure of the tool can be seen in Figure \ref{fig:retool}. The user interacts with the Web application, using Selenium to save the actions taken. The \textbf{extractor} saves the HTML of all pages visited, their URLs, and the actions taken in each page. All that information is passed along to the \textbf{analyzer}, whose purpose is to produce metrics like page ratios, differences between consecutive pages, and others, from the data given. Those metrics are passed to the \textbf{inferrer}, who runs the heuristics suite, identifies existing patterns, and produces a XMI file with the occurrences found.
+
+\begin{figure}[htb]
+  \begin{center}
+    \leavevmode
+    \includegraphics[width=0.8\textwidth]{retool}
+  	\caption[Structure of the PARADIGM-RE tool]{Structure of the PARADIGM-RE tool \cite{nabuco2014inferring}}
+  	\label{fig:retool}
+   \end{center}
+\end{figure}
+
+This approach was evaluated on several worldwide used Web applications and the results were deemed satisfactory, since the tool identified most of the occurring patterns and their location on the page. However, there are some patterns the tool struggles with, such as the Menu pattern, and the heuristics are considered to be still in an incipient state.
 
 \section{Expected Contributions} \label{sec:project}
 
+As stated before, the main goal for this research work is to improve and continue the work on the PARADIGM-RE. The primary task is to adapt a learning algorithm for the tool, to improve the existing pattern identifying heuristics, and the secondary task for this thesis is to extend the range of patterns identifiable by the tool. As such, either an existing data mining tool will be used in conjunction with the PARADIGM-RE tool to create a data model, or a data mining framework will be integrated into the tool. Examples of tools and frameworks considered can be found in Section \ref{sec:dmtools}. 
+
+For the identification of patterns, the information available is the execution traces produced by a user and the HTML code and URLs of all the visited pages. Since execution traces can be considered paths in which we wish to extract sub-paths, \textbf{association rule learning} have been considered, along with its subtype, \textbf{sequential pattern mining}. Sequential pattern mining is preferred because general association rule mining typically does not consider the order of items, as opposed to sequential pattern mining. Another possible venue to pursue are \textbf{classification} algorithms, in which the classes would be the current identifiable patterns, and \textbf{clustering} algorithms. This alternative probably won't be followed, since the data is mostly text and most classification and clustering algorithms deal with numeric values. Consequently, to follow this alternative some transformation of the data would be required to pursue this approach. All study related to data mining can be found on the Section \ref{sec:datamining}. 
+
+There is also the fact that the previously considered paths would only mine execution traces and ignore the other available data (HTML pages, URLs, metrics) so further research is needed to find a way to include that data into the pattern mining process. A possible way could be to use Inductive Logic Programming (ILP) in which one of the steps run would be the sequential pattern mining algorithm, but it would possibly require more time than is allocated for this thesis. Further study is needed to choose the optimal approach to follow.
 
 \section{Structure of the Report} \label{sec:outline}
 
@@ -39,7 +56,7 @@ This document is structured into four main chapters. In this first section, Chap
 
 Chapter \ref{chap:sota} introduces essential concepts to understand the problems with which this document deals, presents the state of the art of approaches that reverse-engineer Web applications, and lastly, gives some insight about data mining algorithms and how they will be applied to this work.
 
-Chapter \ref{chap:approach} explains the solution proposed to the problem at hand. This chapter itself is also divided into several sections. First, to give a better understanding on the context in which the tool to develop will be implemented, a brief overview of the PARADIGM-RE tool is provided. Following this exposition, one then explains the approaches the author is considering to take, although these might be subject to change as the work progresses.
+%Chapter \ref{chap:approach} explains the solution proposed to the problem at hand. This chapter itself is also divided into several sections. First, to give a better understanding on the context in which the tool to develop will be implemented, a brief overview of the PARADIGM-RE tool is provided. Following this exposition, one then explains the approaches the author is considering to take, although these might be subject to change as the work progresses.
 
 Chapter \ref{chap:workplan} outlines the main steps in the development of this thesis (and the respective software prototype) and attempts to provide a feasible schedule for the execution of the work to be done.
 
