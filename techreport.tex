@@ -20,11 +20,14 @@
 %% For iso-8859-1 (latin1), comment next line and uncomment the second line
 \usepackage[utf8]{inputenc}
 %\usepackage[latin1]{inputenc}
+\usepackage[portuguese,english]{babel}
+\selectlanguage{english}
 
 %% English version
 
 % Gantt charts
 \usepackage{pgfgantt}
+\usepackage{listings}
 
 %% MIEIC options
 \usepackage[mieic]{feupteses}
@@ -122,7 +125,7 @@
 %% Preliminary materials
 %%----------------------------------------
 
-% remove unnecssary \include{} commands
+% remove unnecessary \include{} commands
 \begin{Prolog}
   \include{acknows_fct}  % the FCT
   \include{abstract_en} % the abstract

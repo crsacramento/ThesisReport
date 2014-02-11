@@ -2,7 +2,7 @@
 
 %\section*{}
 
-This chapter aims at giving a general overview about the themes addressed by this thesis. We will address the context in which the thesis is inserted, as well as the motivation that led to its proposal. Furthermore there will be a brief description of the main objectives of this thesis, and the methods that will be used to achieve those objectives.
+This chapter aims at giving a general overview about the themes addressed by this dissertation. We will address the context in which the dissertation is inserted, as well as the motivation that led to its proposal. Furthermore there will be a brief description of the main objectives of this dissertation, and the methods that will be used to achieve those objectives.
 
 \section{Context} \label{sec:context}
 
@@ -14,7 +14,7 @@ GUIs \textit{(Graphical User Interfaces)} of all kinds are populated with recurr
 
 \section{Motivation and Objectives} \label{sec:goals}
 
-This thesis is part of an investigation project named PBGT \textit{(Pattern-based GUI Testing)} \cite{moreira2013pattern}. The goal of this investigation project is to develop a model-based GUI testing tool and approach, usable as an industrial tool. This project has five parts: a DSL \textit{(Domain Specific Language)} named \textbf{PARADIGM} to define GUI testing models based on UI patterns; a modeling and testing environment, named \textbf{PARADIGM-ME}, made to support the creation of test models; an automatic test case generation tool, named \textbf{PARADIGM-TG}, that generates test cases from test models defined in PARADIGM; a test case execution tool, named \textbf{PARADIGM-TE}, which executes test cases, analyzes their coverage, and returns detailed execution reports; and finally \textbf{PARADIGM-RE}, a Web application reverse engineering tool whose purpose is to extract UI patterns from Web pages without access to their source code, and use the extracted patterns to generate a test model defined in PARADIGM. 
+This dissertation is part of an investigation project named PBGT \textit{(Pattern-based GUI Testing)} \cite{moreira2013pattern}. The goal of this investigation project is to develop a model-based GUI testing tool and approach, usable as an industrial tool. This project has five parts: a DSL \textit{(Domain Specific Language)} named \textbf{PARADIGM} to define GUI testing models based on UI patterns; a modeling and testing environment, named \textbf{PARADIGM-ME}, made to support the creation of test models; an automatic test case generation tool, named \textbf{PARADIGM-TG}, that generates test cases from test models defined in PARADIGM; a test case execution tool, named \textbf{PARADIGM-TE}, which executes test cases, analyzes their coverage, and returns detailed execution reports; and finally \textbf{PARADIGM-RE}, a Web application reverse engineering tool whose purpose is to extract UI patterns from Web pages without access to their source code, and use the extracted patterns to generate a test model defined in PARADIGM. 
 
 The relationship between the different components can be better understood in Figure \ref{fig:pbgt}. The activities (rounded corner rectangles) with the human figure mean that they are not fully automatic requiring manual intervention. The activities with the cog mean that part (or all) of that activity is automatic. The numbers within the activities define their sequencing.
 
@@ -29,7 +29,7 @@ The relationship between the different components can be better understood in Fi
 
 The proposal aims to continue the work done on PARADIGM-RE \cite{nabuco2013inferring}. This tool identifies interface patterns using Machine Learning inference with the Aleph ILP system \footnote{Aleph: \url{http://www.cs.ox.ac.uk/activities/machlearn/Aleph/aleph\_toc.html}} running on user interaction execution traces produced using Selenium \footnote{Selenium: \url{http://docs.seleniumhq.org/}}. It was deemed necessary then to transform the whole process into an iterative one, with the model being updated at every iteration. 
 
-This was accomplished in \cite{nabuco2014inferring}, where the tool was extended with a pattern identifying module using heuristics. The current structure of the tool can be seen in Figure \ref{fig:retool}. The user interacts with the Web application, using Selenium to save the actions taken. The \textbf{extractor} saves the HTML of all pages visited, their URLs, and the actions taken in each page. All that information is passed along to the \textbf{analyzer}, whose purpose is to produce metrics like page ratios, differences between consecutive pages, and others, from the data given. Those metrics are passed to the \textbf{inferrer}, who runs the heuristics suite, identifies existing patterns, and produces a XMI file with the occurrences found.
+This was accomplished in \cite{nabuco2014inferring}, where the tool was extended with a pattern identifying module using heuristics. The current structure of the tool can be seen in Figure \ref{fig:retool}. 
 
 \begin{figure}[htb]
   \begin{center}
@@ -40,24 +40,59 @@ This was accomplished in \cite{nabuco2014inferring}, where the tool was extended
    \end{center}
 \end{figure}
 
+The user interacts with the Web application, using Selenium to save the actions taken. An example of execution traces saved by Selenium can be seen on table \ref{tab:amazontraces}. 
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|}
+\hline
+\multicolumn{3}{|c|}{\textbf{amazon}}                                                                                       \\ \hline
+\textbf{actionType} & \textbf{element}                                                                 & \textbf{text}      \\ \hline
+open                & /                                                                                &                    \\ \hline
+type                & id=twotabsearchtextbox                                                           & tablet             \\ \hline
+clickAndWait        & css=input.nav-submit-input                                                       &                    \\ \hline
+select              & id=sort                                                                          & label=Most Popular \\ \hline
+click               & id=pagnNextString                                                                &                    \\ \hline
+click               & id=pagnNextString                                                                &                    \\ \hline
+clickAndWait        & link=Image                                                                       &                    \\ \hline
+clickAndWait        & link=Detail                                                                      &                    \\ \hline
+click               & link=android tablet                                                              &                    \\ \hline
+click               & css=li.refinementImage \textgreater a.. \textgreater span.refinementLink         &                    \\ \hline
+clickAndWait        & css=\#result\_3 \textgreater h3.newaps \textgreater a \textgreater span.lrg.bold &                    \\ \hline
+clickAndWait        & link=Explore similar items                                                       &                    \\ \hline
+\end{tabular}
+\caption{An example of execution traces produced on the Amazon.com website.}
+\label{tab:amazontraces}
+\end{table}
+
+The \textbf{extractor} saves the HTML of all pages visited, their URLs, and the actions taken in each page. All that information is passed along to the \textbf{analyzer}, whose purpose is to produce metrics like page ratios, differences between consecutive pages, and others, from the data given. Those metrics are passed to the \textbf{inferrer}, who runs the heuristics suite, identifies existing patterns, and produces a XMI file with the occurrences found.An example of the contents of such a file, produced consuming the execution traces in Table \ref{tab:amazontraces}, can be found on Listing \ref{paradigm}.
+
+\lstset{language=XML,caption={An example of a .paradigm file with identified patterns},label=paradigm}
+\begin{lstlisting}
+<?xml version="1.0" encoding="UTF-8"?>
+<Paradigm:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI"
+  xmlns:Paradigm="http://www.example.org/Paradigm" title="patterns"/>
+	<nodes xsi:type="Paradigm:Init" name="XInit" number="1"/>
+	<nodes xsi:type="Paradigm:Sort" name="Sort1" number="2"/>
+	<nodes xsi:type="Paradigm:End" name="End" number="3"/>
+</Paradigm:Model>
+\end{lstlisting}
+
 This approach was evaluated on several worldwide used Web applications and the results were deemed satisfactory, since the tool identified most of the occurring patterns and their location on the page. However, there are some patterns the tool struggles with, such as the Menu pattern, and the heuristics are considered to be still in an incipient state.
 
 \section{Expected Contributions} \label{sec:project}
 
-As stated before, the main goal for this research work is to improve and continue the work on the PARADIGM-RE. The primary task is to adapt a learning algorithm for the tool, to improve the existing pattern identifying heuristics, and the secondary task for this thesis is to extend the range of patterns identifiable by the tool. As such, either an existing data mining tool will be used in conjunction with the PARADIGM-RE tool to create a data model, or a data mining framework will be integrated into the tool. Examples of tools and frameworks considered can be found in Section \ref{sec:dmtools}. 
+As stated before, the main goal for this research work is to improve and continue the work on the PARADIGM-RE. The primary task is to adapt a learning algorithm for the tool, in order to improve the existing pattern identifying heuristics, and the other goals are extending the existent identification of patterns and implementing the prodution of a PARADIGM model for the PARADIGM-ME tool to process. As such, either an existing data mining tool will be used in conjunction with the PARADIGM-RE tool to create a data model, or a data mining framework will be integrated into the tool. Examples of tools and frameworks considered can be found in Section \ref{sec:dmtools}. 
 
 For the identification of patterns, the information available is the execution traces produced by a user and the HTML code and URLs of all the visited pages. Since execution traces can be considered paths in which we wish to extract sub-paths, \textbf{association rule learning} have been considered, along with its subtype, \textbf{sequential pattern mining}. Sequential pattern mining is preferred because general association rule mining typically does not consider the order of items, as opposed to sequential pattern mining. Another possible venue to pursue are \textbf{classification} algorithms, in which the classes would be the current identifiable patterns, and \textbf{clustering} algorithms. This alternative probably won't be followed, since the data is mostly text and most classification and clustering algorithms deal with numeric values. Consequently, to follow this alternative some transformation of the data would be required to pursue this approach. All study related to data mining can be found on the Section \ref{sec:datamining}. 
 
-There is also the fact that the previously considered paths would only mine execution traces and ignore the other available data (HTML pages, URLs, metrics) so further research is needed to find a way to include that data into the pattern mining process. A possible way could be to use Inductive Logic Programming (ILP) in which one of the steps run would be the sequential pattern mining algorithm, but it would possibly require more time than is allocated for this thesis. Further study is needed to choose the optimal approach to follow.
+There is also the fact that the previously considered paths would only mine execution traces and ignore the other available data (HTML pages, URLs, metrics) so further research is needed to find a way to include that data into the pattern mining process. A possible way could be to use Inductive Logic Programming (ILP) in which one of the steps run would be the sequential pattern mining algorithm, but it would possibly require more time than is allocated for this dissertation. Further study is needed to choose the optimal approach to follow.
 
 \section{Structure of the Report} \label{sec:outline}
 
-This document is structured into four main chapters. In this first section, Chapter \ref{chap:intro}, we start by introducing the theme to be developed during the course of the dissertation, starting by defining the context and issue at hand and describing the goals of this thesis.
+This document is structured into four main chapters. In this first section, Chapter \ref{chap:intro}, we start by introducing the theme to be developed during the course of the dissertation, starting by defining the context and issue at hand and describing the goals of this dissertation.
 
 Chapter \ref{chap:sota} introduces essential concepts to understand the problems with which this document deals, presents the state of the art of approaches that reverse-engineer Web applications, and lastly, gives some insight about data mining algorithms and how they will be applied to this work.
 
-%Chapter \ref{chap:approach} explains the solution proposed to the problem at hand. This chapter itself is also divided into several sections. First, to give a better understanding on the context in which the tool to develop will be implemented, a brief overview of the PARADIGM-RE tool is provided. Following this exposition, one then explains the approaches the author is considering to take, although these might be subject to change as the work progresses.
+Chapter \ref{chap:workplan} outlines the main steps in the development of this dissertation (and the respective software prototype) and attempts to provide a feasible schedule for the execution of the work to be done.
 
-Chapter \ref{chap:workplan} outlines the main steps in the development of this thesis (and the respective software prototype) and attempts to provide a feasible schedule for the execution of the work to be done.
-
-Chapter \ref{chap:conclusions} sums up the what has been defined in the report, emphasizing the problem that the thesis addresses and the work that will be executed towards solving that problem. It will also give a brief idea of what are the expected results at the end of the project.
+Chapter \ref{chap:conclusions} sums up the what has been defined in the report, emphasizing the problem that the dissertation addresses and the work that will be executed towards solving that problem. It will also give a brief idea of what are the expected results at the end of the project.

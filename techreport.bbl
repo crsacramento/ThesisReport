@@ -51,6 +51,12 @@ Michael Benedikt, Juliana Freire, and Patrice Godefroid.
 \newblock In {\em In Proceedings of 11th International World Wide Web
   Conference (WW W’2002}. Citeseer, 2002.
 
+\bibitem[BMS97]{brin1997beyond}
+Sergey Brin, Rajeev Motwani, and Craig Silverstein.
+\newblock Beyond market baskets: Generalizing association rules to
+  correlations.
+\newblock In {\em ACM SIGMOD Record}, volume~26, pages 265--276. ACM, 1997.
+
 \bibitem[Bri99]{brin1999extracting}
 Sergey Brin.
 \newblock Extracting patterns and relations from the world wide web.
@@ -79,6 +85,11 @@ Soumen Chakrabarti, Martin Ester, Usama Fayyad, Johannes Gehrke, Jiawei Han,
   Shinichi Morishita, Gregory Piatetsky-Shapiro, and Wei Wang.
 \newblock Data mining curriculum: A proposal (version 0.91).
 \newblock 2004.
+
+\bibitem[CGL07]{ceri2007mining}
+Stefano Ceri, Francesco~Di Giunta, and Pier~Luca Lanzi.
+\newblock Mining constraint violations.
+\newblock {\em ACM Transactions on Database Systems (TODS)}, 32(1):6, 2007.
 
 \bibitem[CHL03]{chang2003automatic}
 Chia-Hui Chang, Chun-Nan Hsu, and Shao-Cheng Lui.
@@ -185,23 +196,50 @@ Dayne Freitag.
   learning approach.
 \newblock In {\em AAAI/IAAI}, pages 517--523, 1998.
 
+\bibitem[FVNT11]{fournier2011rulegrowth}
+Philippe Fournier-Viger, Roger Nkambou, and Vincent Shin-Mu Tseng.
+\newblock Rulegrowth: mining sequential rules common to several sequences by
+  pattern-growth.
+\newblock In {\em Proceedings of the 2011 ACM symposium on applied computing},
+  pages 956--961. ACM, 2011.
+
 \bibitem[G{\etalchar{+}}05]{garrett2005ajax}
 Jesse~James Garrett et~al.
 \newblock Ajax: A new approach to web applications, 2005.
+
+\bibitem[HF99]{han1999mining}
+Jiawei Han and AW~Fu.
+\newblock Mining multiple-level association rules in large databases.
+\newblock {\em Knowledge and Data Engineering, IEEE Transactions on},
+  11(5):798--805, 1999.
 
 \bibitem[HKP06]{han2006data}
 Jiawei Han, Micheline Kamber, and Jian Pei.
 \newblock {\em Data mining: concepts and techniques}.
 \newblock Morgan kaufmann, 2006.
 
-\bibitem[HPY00]{han2000mining}
-Jiawei Han, Jian Pei, and Yiwen Yin.
-\newblock Mining frequent patterns without candidate generation.
-\newblock In {\em ACM SIGMOD Record}, volume~29, pages 1--12. ACM, 2000.
+\bibitem[HPMA{\etalchar{+}}00]{han2000freespan}
+Jiawei Han, Jian Pei, Behzad Mortazavi-Asl, Qiming Chen, Umeshwar Dayal, and
+  Mei-Chun Hsu.
+\newblock Freespan: frequent pattern-projected sequential pattern mining.
+\newblock In {\em Proceedings of the sixth ACM SIGKDD international conference
+  on Knowledge discovery and data mining}, pages 355--359. ACM, 2000.
+
+\bibitem[HPYM04]{han2004mining}
+Jiawei Han, Jian Pei, Yiwen Yin, and Runying Mao.
+\newblock Mining frequent patterns without candidate generation: A
+  frequent-pattern tree approach.
+\newblock {\em Data mining and knowledge discovery}, 8(1):53--87, 2004.
 
 \bibitem[jpf]{jpf}
 Java path finder.
 \newblock Accessed: 2014-01-21.
+
+\bibitem[KR05]{koh2005finding}
+Yun~Sing Koh and Nathan Rountree.
+\newblock Finding sporadic rules using apriori-inverse.
+\newblock In {\em Advances in Knowledge Discovery and Data Mining}, pages
+  97--106. Springer, 2005.
 
 \bibitem[Lei02]{leisch2002sweave}
 Friedrich Leisch.
@@ -209,12 +247,23 @@ Friedrich Leisch.
   analysis.
 \newblock In {\em Compstat}, pages 575--580. Springer, 2002.
 
+\bibitem[LHM99]{liu1999mining}
+Bing Liu, Wynne Hsu, and Yiming Ma.
+\newblock Mining association rules with multiple minimum supports.
+\newblock In {\em Proceedings of the fifth ACM SIGKDD international conference
+  on Knowledge discovery and data mining}, pages 337--341. ACM, 1999.
+
 \bibitem[LL08]{lin2008employing}
 James Lin and James~A Landay.
 \newblock Employing patterns and layers for early-stage design and prototyping
   of cross-device user interfaces.
 \newblock In {\em Proceedings of the SIGCHI Conference on Human Factors in
   Computing Systems}, pages 1313--1322. ACM, 2008.
+
+\bibitem[LS69]{lancaster1969chi}
+Henry~Oliver Lancaster and E~Seneta.
+\newblock {\em Chi-Square Distribution}.
+\newblock Wiley Online Library, 1969.
 
 \bibitem[Mem07]{memon2007event}
 Atif~M Memon.
@@ -274,6 +323,14 @@ Miguel Nabuco, Ana~CR Paiva, and Joao~Pascoala Faria.
   applications.
 \newblock Manuscript submitted for publication, 2014.
 
+\bibitem[PHMA{\etalchar{+}}04]{pei2004mining}
+Jian Pei, Jiawei Han, Behzad Mortazavi-Asl, Jianyong Wang, Helen Pinto, Qiming
+  Chen, Umeshwar Dayal, and Mei-Chun Hsu.
+\newblock Mining sequential patterns by pattern-growth: The prefixspan
+  approach.
+\newblock {\em Knowledge and Data Engineering, IEEE Transactions on},
+  16(11):1424--1440, 2004.
+
 \bibitem[PHP{\etalchar{+}}01]{pinto2001multi}
 Helen Pinto, Jiawei Han, Jian Pei, Ke~Wang, Qiming Chen, and Umeshwar Dayal.
 \newblock Multi-dimensional sequential pattern mining.
@@ -302,6 +359,12 @@ Filippo Ricca and Paolo Tonella.
 \newblock Understanding and restructuring web sites with reweb.
 \newblock {\em Multimedia, IEEE}, 8(2):40--51, 2001.
 
+\bibitem[SA96]{srikant1996mining}
+Ramakrishnan Srikant and Rakesh Agrawal.
+\newblock {\em Mining sequential patterns: Generalizations and performance
+  improvements}.
+\newblock Springer, 1996.
+
 \bibitem[SB08]{songram2008closed}
 Panida Songram and Veera Boonjing.
 \newblock Closed multidimensional sequential pattern mining.
@@ -328,6 +391,11 @@ Sreedevi Sampath, Sara Sprenkle, Emily Gibson, Lori Pollock, and Amie~Souter
 \newblock {\em Software Engineering, IEEE Transactions on}, 33(10):643--658,
   2007.
 
+\bibitem[ST95]{silberschatz1995subjective}
+Abraham Silberschatz and Alexander Tuzhilin.
+\newblock On subjective measures of interestingness in knowledge discovery.
+\newblock In {\em KDD}, volume~95, pages 275--281, 1995.
+
 \bibitem[Sys99]{systa1999dynamic}
 Tarja Syst{\"a}.
 \newblock Dynamic reverse engineering of java software.
@@ -337,6 +405,11 @@ Tarja Syst{\"a}.
 Jenifer Tidwell.
 \newblock {\em Designing interfaces}.
 \newblock O'Reilly, 2010.
+
+\bibitem[TKS00]{tan2000indirect}
+Pang-Ning Tan, Vipin Kumar, and Jaideep Srivastava.
+\newblock {\em Indirect association: Mining higher order dependencies in data}.
+\newblock Springer, 2000.
 
 \bibitem[VWVDVE01]{van2001patterns}
 Martijn Van~Welie, Gerrit~C Van Der~Veer, and Anton Eli{\"e}ns.
@@ -361,5 +434,10 @@ Xifeng Yan, Jiawei Han, and Ramin Afshar.
 \newblock Clospan: Mining closed sequential patterns in large datasets.
 \newblock In {\em Proc. 2003 SIAM Int’l Conf. Data Mining (SDM’03)}, pages
   166--177, 2003.
+
+\bibitem[Zak01]{zaki2001spade}
+Mohammed~J Zaki.
+\newblock Spade: An efficient algorithm for mining frequent sequences.
+\newblock {\em Machine learning}, 42(1-2):31--60, 2001.
 
 \end{thebibliography}

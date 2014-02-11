@@ -1,28 +1,34 @@
 \select@language {english}
+\select@language {english}
+\select@language {portuguese}
+\select@language {english}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Context}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Motivation and Objectives}{2}{section.1.2}
-\contentsline {section}{\numberline {1.3}Expected Contributions}{3}{section.1.3}
-\contentsline {section}{\numberline {1.4}Structure of the Report}{4}{section.1.4}
-\contentsline {chapter}{\numberline {2}State-of-the-Art}{5}{chapter.2}
-\contentsline {section}{\numberline {2.1}Introduction}{5}{section.2.1}
-\contentsline {section}{\numberline {2.2}Reverse Engineering}{5}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Extraction of Information from Execution Traces}{5}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Extraction of Information from Web Applications}{6}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Inferring Patterns from Web applications}{7}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4}Capture-Replay Tools}{7}{subsection.2.2.4}
-\contentsline {section}{\numberline {2.3}Data Mining}{8}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Data Mining Algorithm Categories}{8}{subsection.2.3.1}
-\contentsline {subsubsection}{\numberline {2.3.1.1}Association Rules}{9}{subsubsection.2.3.1.1}
-\contentsline {subsubsection}{\numberline {2.3.1.2}Sequential Pattern Mining}{10}{subsubsection.2.3.1.2}
-\contentsline {subsubsection}{\numberline {2.3.1.3}Evaluation Metrics}{11}{subsubsection.2.3.1.3}
-\contentsline {subsection}{\numberline {2.3.2}Data Mining Tools and Frameworks}{12}{subsection.2.3.2}
-\contentsline {subsubsection}{\numberline {2.3.2.1}RapidMiner}{12}{subsubsection.2.3.2.1}
-\contentsline {subsubsection}{\numberline {2.3.2.2}WEKA}{13}{subsubsection.2.3.2.2}
-\contentsline {subsubsection}{\numberline {2.3.2.3}R}{13}{subsubsection.2.3.2.3}
-\contentsline {subsubsection}{\numberline {2.3.2.4}SPMF (Sequential Pattern Mining Framework)}{15}{subsubsection.2.3.2.4}
-\contentsline {section}{\numberline {2.4}Patterns}{15}{section.2.4}
-\contentsline {section}{\numberline {2.5}Chapter Conclusions}{16}{section.2.5}
-\contentsline {chapter}{\numberline {3}Work Plan}{17}{chapter.3}
-\contentsline {chapter}{\numberline {4}Conclusions}{19}{chapter.4}
-\contentsline {chapter}{References}{21}{section*.27}
+\contentsline {section}{\numberline {1.3}Expected Contributions}{4}{section.1.3}
+\contentsline {section}{\numberline {1.4}Structure of the Report}{5}{section.1.4}
+\contentsline {chapter}{\numberline {2}State-of-the-Art}{7}{chapter.2}
+\contentsline {section}{\numberline {2.1}Introduction}{7}{section.2.1}
+\contentsline {section}{\numberline {2.2}Reverse Engineering}{7}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Extraction of Information from Execution Traces}{7}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Extraction of Information from Web Applications}{8}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Inferring Patterns from Web applications}{9}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Capture-Replay Tools}{9}{subsection.2.2.4}
+\contentsline {section}{\numberline {2.3}Data Mining}{10}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Data Mining Algorithm Categories}{10}{subsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.1.1}Association Rules}{11}{subsubsection.2.3.1.1}
+\contentsline {subsubsection}{\numberline {2.3.1.2}Sequential Pattern Mining}{13}{subsubsection.2.3.1.2}
+\contentsline {subsubsection}{\numberline {2.3.1.3}Evaluation Metrics}{15}{subsubsection.2.3.1.3}
+\contentsline {subsection}{\numberline {2.3.2}Data Mining Tools and Frameworks}{16}{subsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.2.1}RapidMiner}{16}{subsubsection.2.3.2.1}
+\contentsline {subsubsection}{\numberline {2.3.2.2}WEKA}{16}{subsubsection.2.3.2.2}
+\contentsline {subsubsection}{\numberline {2.3.2.3}R}{17}{subsubsection.2.3.2.3}
+\contentsline {subsubsection}{\numberline {2.3.2.4}SPMF (Sequential Pattern Mining Framework)}{18}{subsubsection.2.3.2.4}
+\contentsline {section}{\numberline {2.4}Patterns}{19}{section.2.4}
+\contentsline {section}{\numberline {2.5}Chapter Conclusions}{19}{section.2.5}
+\contentsline {chapter}{\numberline {3}Work Plan}{21}{chapter.3}
+\contentsline {chapter}{\numberline {4}Conclusions}{23}{chapter.4}
+\contentsline {section}{\numberline {4.1}Objectives}{23}{section.4.1}
+\contentsline {section}{\numberline {4.2}Project}{23}{section.4.2}
+\contentsline {section}{\numberline {4.3}Future Work}{23}{section.4.3}
+\contentsline {chapter}{References}{25}{section*.32}
