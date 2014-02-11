@@ -21,7 +21,7 @@ The relationship between the different components can be better understood in Fi
 \begin{figure}[!htb]
   \begin{center}
     \leavevmode
-    \includegraphics[width=0.8\textwidth]{pbgt}
+    \includegraphics[width=0.9\textwidth]{pbgt}
   	\caption[An overview of the PBGT project]{An overview of the PBGT project \cite{nabuco2013inferring}}
   	\label{fig:pbgt}
    \end{center}
@@ -34,13 +34,13 @@ This was accomplished in \cite{nabuco2014inferring}, where the tool was extended
 \begin{figure}[htb]
   \begin{center}
     \leavevmode
-    \includegraphics[width=0.8\textwidth]{retool}
+    \includegraphics[width=0.9\textwidth]{retool}
   	\caption[Structure of the PARADIGM-RE tool]{Structure of the PARADIGM-RE tool \cite{nabuco2014inferring}}
   	\label{fig:retool}
    \end{center}
 \end{figure}
 
-The user interacts with the Web application, using Selenium to save the actions taken. An example of execution traces saved by Selenium can be seen on table \ref{tab:amazontraces}. 
+The user interacts with the Web application, using Selenium to save the actions taken.  An example of execution traces saved by Selenium can be seen on table \ref{tab:amazontraces}. 
 
 \begin{table}[h]
 \begin{tabular}{|l|l|l|}
@@ -83,15 +83,15 @@ This approach was evaluated on several worldwide used Web applications and the r
 
 As stated before, the main goal for this research work is to improve and continue the work on the PARADIGM-RE. The primary task is to adapt a learning algorithm for the tool, in order to improve the existing pattern identifying heuristics, and the other goals are extending the existent identification of patterns and implementing the prodution of a PARADIGM model for the PARADIGM-ME tool to process. As such, either an existing data mining tool will be used in conjunction with the PARADIGM-RE tool to create a data model, or a data mining framework will be integrated into the tool. Examples of tools and frameworks considered can be found in Section \ref{sec:dmtools}. 
 
-For the identification of patterns, the information available is the execution traces produced by a user and the HTML code and URLs of all the visited pages. Since execution traces can be considered paths in which we wish to extract sub-paths, \textbf{association rule learning} have been considered, along with its subtype, \textbf{sequential pattern mining}. Sequential pattern mining is preferred because general association rule mining typically does not consider the order of items, as opposed to sequential pattern mining. Another possible venue to pursue are \textbf{classification} algorithms, in which the classes would be the current identifiable patterns, and \textbf{clustering} algorithms. This alternative probably won't be followed, since the data is mostly text and most classification and clustering algorithms deal with numeric values. Consequently, to follow this alternative some transformation of the data would be required to pursue this approach. All study related to data mining can be found on the Section \ref{sec:datamining}. 
+For the identification of patterns, the information available is the execution traces produced by a user and the HTML code and URLs of all the visited pages. Since execution traces can be considered paths in which we wish to extract sub-paths, \textbf{association rule learning} has been considered, along with its subtype, \textbf{sequential pattern mining}. Sequential pattern mining is preferred because general association rule mining typically does not consider the order of items, as opposed to sequential pattern mining. Other possible venues to pursue are \textbf{classification} algorithms, in which the classes would be the current identifiable patterns, and \textbf{clustering} algorithms. These alternatives probably won't be followed, since the data is mostly text and most classification and clustering algorithms deal with numeric values; consequently, to follow this alternative some transformation of the data would be required to pursue this approach. All study done related to data mining can be found on the Section \ref{sec:datamining}. 
 
 There is also the fact that the previously considered paths would only mine execution traces and ignore the other available data (HTML pages, URLs, metrics) so further research is needed to find a way to include that data into the pattern mining process. A possible way could be to use Inductive Logic Programming (ILP) in which one of the steps run would be the sequential pattern mining algorithm, but it would possibly require more time than is allocated for this dissertation. Further study is needed to choose the optimal approach to follow.
 
 \section{Structure of the Report} \label{sec:outline}
 
-This document is structured into four main chapters. In this first section, Chapter \ref{chap:intro}, we start by introducing the theme to be developed during the course of the dissertation, starting by defining the context and issue at hand and describing the goals of this dissertation.
+This document is structured into four main chapters. In this first section, Chapter \ref{chap:intro}, we start by introducing the theme to be developed during the course of the dissertation, starting by defining the context, motivations, goals of this dissertation and the issue at hand.
 
-Chapter \ref{chap:sota} introduces essential concepts to understand the problems with which this document deals, presents the state of the art of approaches that reverse-engineer Web applications, and lastly, gives some insight about data mining algorithms and how they will be applied to this work.
+Chapter \ref{chap:sota} introduces essential concepts to understand the problems with which this document deals, presents the state of the art of approaches that reverse-engineer Web applications and popular capture-replay tools, and lastly, gives some context about data mining algorithms and presents relevant data mining tools and frameworks and how they will be applied to this work.
 
 Chapter \ref{chap:workplan} outlines the main steps in the development of this dissertation (and the respective software prototype) and attempts to provide a feasible schedule for the execution of the work to be done.
 
